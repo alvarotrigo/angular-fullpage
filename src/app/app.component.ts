@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   config: any;
+  fullpage_api: any;
 
   constructor() {
 
@@ -17,10 +18,21 @@ export class AppComponent {
       anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
       menu: '#menu',
       lazyLoad: true,
-      afterLoad: function() {
-        console.log('load');
+      afterLoad: () => {
+        console.log('afterLoad');
+      },
+      afterRender: () => {
+        console.log('afterRender');
+      },
+      afterResize: (width, height) => {
+        console.log(width + ' ' + height);
       }
     };
+  }
+
+  getFullPage(fullPageRef) {
+    console.log('created');
+    this.fullpage_api = fullPageRef;
   }
 
 }
