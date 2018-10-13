@@ -1,8 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
-// fullPage type
-import { fullpage_api , options } from 'fullpage.js/dist/fullpage.extensions.min';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,8 +7,8 @@ import { fullpage_api , options } from 'fullpage.js/dist/fullpage.extensions.min
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-  config: options;
-  fullpage_api: fullpage_api;
+  config: any;
+  fullpage_api: any;
 
   constructor() {
 
@@ -45,23 +42,17 @@ export class AppComponent {
       lazyLoad: true,
 
       // events callback
-      onLeave: () => {
+      onLeave: (origin, destination, direction) => {
         console.log('onLeave');
       },
-      afterLoad: () => {
+      afterLoad: (origin, destination, direction) => {
         console.log('afterLoad');
       },
       afterRender: () => {
         console.log('afterRender');
       },
-      afterResize: () => {
+      afterResize: (width, height) => {
         console.log('afterResize');
-      },
-      afterSlideLoad: () => {
-        console.log('slideLoad');
-      },
-      onSlideLeave: () => {
-        console.log('onSlideLeave');
       }
     };
   }
