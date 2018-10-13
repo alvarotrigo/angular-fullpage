@@ -1,10 +1,6 @@
 # angular-fullpage
 Official Angular wrapper for fullPage.js
 
-There is no auto reloading => need to manually build for changes
+ng build angular-fullpage --watch
 
-Build library:
 ng build angular-fullpage
-
-Generate library component: 
-ng generate component name --project=angular-fullpage
