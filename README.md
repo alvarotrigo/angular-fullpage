@@ -28,11 +28,9 @@ In your style.scss or component.scss
 example include fullpage directive in your component
 
 ```typescript
-import { fullpage_api , options } from 'fullpage.js/dist/fullpage.extensions.min';
-
 export class AppComponent {
-  config: options;
-  fullpage_api: fullpage_api;
+  config: any;
+  fullpage_api: any;
 
   constructor() {
 
@@ -60,7 +58,7 @@ export class AppComponent {
 
 adding fullpage directive
 ```html
-<div fullpage [options]="config" (ref)="getRef($event)">
+<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
   <div class="section">Some section1</div>
 	<div class="section" (click)="fullpage_api.moveSectionDown()">Some section2</div>
 	<div class="section">
