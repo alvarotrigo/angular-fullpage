@@ -5,7 +5,7 @@
 	<li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
 </ul>
 
-<div id="fullpage" fullpage [fullPageConfig]="config" (fullPageCreated)="getFullPage($event)">
+<div fullpage [options]="config" (ref)="getRef($event)">
     <div class="section">Some section1</div>
 	<div class="section" (click)="fullpage_api.moveSectionDown()">Some section2</div>
 	<div class="section">

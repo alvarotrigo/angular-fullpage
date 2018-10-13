@@ -4,25 +4,18 @@ Official Angular wrapper for fullPage.js
 This project was generated with [Angular CLI] version 6.2.4.
 
 
-//install fullpage.js
-
-npm install fullpage.js
+npm install --save fullpage.js
 
 
 ```typescript
 import { AngularFullpageModule } from 'angular-fullpage';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFullpageModule //*** added
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  ]
 })
 ```
 
@@ -35,49 +28,47 @@ In your style.scss or component.scss
 example include fullpage directive in your component
 
 ```typescript
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
-})
+import { fullpage_api , options } from 'fullpage.js/dist/fullpage.extensions.min';
+
 export class AppComponent {
-  config: any;
-  fullpage_api: any;
+  config: options;
+  fullpage_api: fullpage_api;
 
   constructor() {
 
+    // this is just an example => for more details on config please visit fullPage.js docs
     this.config = {
       licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-      autoScrolling: true,
-      sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-      anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+      // Navigation
+      anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
       menu: '#menu',
-      lazyLoad: true,
-      afterLoad: () => {
-        console.log('afterLoad');
+      // events callback
+      afterResize: () => {
       },
-      afterRender: () => {
-        console.log('afterRender');
-      },
-      afterResize: (width, height) => {
-        console.log(width + ' ' + height);
+      afterSlideLoad: () => {
       }
     };
   }
 
-  getFullPage(fullPageRef) {
+  getRef(fullPageRef) {
     this.fullpage_api = fullPageRef;
   }
 
 }
+
 ```
 
+adding fullpage directive into your fullpage.js dom
 ```html
-<div id="fullpage" fullpage [fullPageConfig]="config" (fullPageCreated)="getFullPage($event)">
-    <div class="section">Some section1</div>
+<div fullpage [options]="config" (ref)="getRef($event)">
+  <div class="section">Some section1</div>
 	<div class="section" (click)="fullpage_api.moveSectionDown()">Some section2</div>
-	<div class="section">Some section3</div>
-	<div class="section active" (click)="fullpage_api.moveTo('secondPage', 2)">Some section4</div>
+	<div class="section">
+		<div class="slide">Slide 2.1</div>
+		<div class="slide">Slide 2.2</div>
+		<div class="slide">Slide 2.3</div>
+	</div>
+	<div class="section" (click)="fullpage_api.moveTo('secondPage', 2)">Some section4</div>
 </div>
 ```
 
@@ -104,15 +95,17 @@ example overide the padding of control arrow
 Extensions
 ...
 
-In angular.json file
+Add extension.js file to angular.json
 
 "assets": [
   "src/favicon.ico",
   "src/assets"
 ],
+
 "styles": [
   "src/styles.css"
 ],
+
 "scripts": [
   "src/assets/_your_extension_file.js"
 ],

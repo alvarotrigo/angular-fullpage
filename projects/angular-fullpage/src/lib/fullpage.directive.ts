@@ -1,4 +1,4 @@
-import { Directive, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { Directive, ElementRef, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 import fullpage from 'fullpage.js/dist/fullpage.extensions.min';
 
@@ -7,15 +7,15 @@ import fullpage from 'fullpage.js/dist/fullpage.extensions.min';
   selector: '[fullpage]'
 })
 export class FullpageDirective implements OnInit {
-  @Input() fullPageConfig;
-  @Input() id: string;
+  @Input() options;
+  @Output() ref = new EventEmitter();
 
-  @Output() fullPageCreated = new EventEmitter();
-
-  constructor() { }
+  constructor(el: ElementRef) {
+    el.nativeElement.id = 'fullpage';
+  }
 
   ngOnInit() {
-    const fullPageRef = new fullpage('#' + this.id, this.fullPageConfig);
-    this.fullPageCreated.emit(fullPageRef);
+    const fullPageRef = new fullpage('#fullpage', this.options);
+    this.ref.emit(fullPageRef);
   }
 }

@@ -44,7 +44,7 @@ export class AppComponent {
 
       lazyLoad: true,
 
-      // events
+      // events callback
       onLeave: () => {
         console.log('onLeave');
       },
@@ -66,7 +66,7 @@ export class AppComponent {
     };
   }
 
-  getFullPage(fullPageRef) {
+  getRef(fullPageRef) {
     console.log('created');
     this.fullpage_api = fullPageRef;
   }
