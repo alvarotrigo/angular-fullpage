@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { FullpageDirective } from './fullpage.directive';
 
 @NgModule({
-  imports: [
-  ],
+  imports: [],
   declarations: [FullpageDirective],
   exports: [FullpageDirective]
 })
