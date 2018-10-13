@@ -58,7 +58,7 @@ export class AppComponent {
 
 ```
 
-adding fullpage directive into your fullpage.js dom
+adding fullpage directive
 ```html
 <div fullpage [options]="config" (ref)="getRef($event)">
   <div class="section">Some section1</div>
@@ -98,14 +98,21 @@ Extensions
 Add extension.js file to angular.json
 
 "assets": [
+
   "src/favicon.ico",
+
   "src/assets"
+
 ],
 
 "styles": [
+
   "src/styles.css"
+
 ],
 
 "scripts": [
+
   "src/assets/_your_extension_file.js"
+  
 ],
