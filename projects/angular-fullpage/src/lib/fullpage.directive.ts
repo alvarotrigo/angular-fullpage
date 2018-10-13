@@ -1,15 +1,16 @@
 import { Directive, Input, OnInit, Output, EventEmitter } from '@angular/core';
-import fullpage from 'fullpage.js/dist/fullpage.extensions.min.js';
+
+import fullpage from 'fullpage.js/dist/fullpage.extensions.min';
 
 @Directive({
   // tslint:disable-next-line:directive-selector
   selector: '[fullpage]'
 })
 export class FullpageDirective implements OnInit {
-  @Input() fullPageConfig: any;
+  @Input() fullPageConfig;
   @Input() id: string;
 
-  @Output() fullPageCreated: any = new EventEmitter();
+  @Output() fullPageCreated = new EventEmitter();
 
   constructor() { }
 

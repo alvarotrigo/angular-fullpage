@@ -26,6 +26,12 @@ import { AngularFullpageModule } from 'angular-fullpage';
 })
 ```
 
+In your style.scss or component.scss
+
+```css
+@import url(~fullpage.js/dist/fullpage.min.css);
+```
+
 example include fullpage directive in your component
 
 ```typescript
@@ -74,3 +80,39 @@ export class AppComponent {
 	<div class="section active" (click)="fullpage_api.moveTo('secondPage', 2)">Some section4</div>
 </div>
 ```
+
+If you need to override the default css you need to change View Encapsulation
+
+```typescript
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
+  encapsulation: ViewEncapsulation.None  // <-------
+})
+```
+
+example overide the padding of control arrow
+
+```css
+.fp-controlArrow {
+    padding: 0 2%;
+}
+```
+
+
+Extensions
+...
+
+In angular.json file
+
+"assets": [
+  "src/favicon.ico",
+  "src/assets"
+],
+"styles": [
+  "src/styles.css"
+],
+"scripts": [
+  "src/assets/_your_extension_file.js"
+],
