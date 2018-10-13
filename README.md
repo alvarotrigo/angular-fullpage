@@ -97,22 +97,15 @@ Extensions
 
 Add extension.js file to angular.json
 
-"assets": [
-
-  "src/favicon.ico",
-
-  "src/assets"
-
+"assets": [  
+  "src/favicon.ico",  
+  "src/assets"  
 ],
 
-"styles": [
-
-  "src/styles.css"
-
+"styles": [  
+  "src/styles.css"  
 ],
 
-"scripts": [
-
-  "src/assets/_your_extension_file.js"
-  
+"scripts": [  
+  "src/assets/_your_extension_file.js"  
 ],
