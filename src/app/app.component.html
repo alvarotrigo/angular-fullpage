@@ -1,17 +1,1 @@
-<ul id="menu">
-	<li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
-	<li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
-	<li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
-	<li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
-</ul>
-
-<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
-    <div class="section">Some section1</div>
-	<div class="section" (click)="fullpage_api.moveSectionDown()">Some section2</div>
-	<div class="section">
-		<div class="slide">Slide 2.1</div>
-		<div class="slide">Slide 2.2</div>
-		<div class="slide">Slide 2.3</div>
-	</div>
-	<div class="section" (click)="fullpage_api.moveTo('secondPage', 2)">Some section4</div>
-</div>
+<router-outlet></router-outlet>
