@@ -1,2 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url(~fullpage.js/dist/fullpage.min.css);
+
+// change default css
+.fp-controlArrow {
+    padding: 0 1%;
+}

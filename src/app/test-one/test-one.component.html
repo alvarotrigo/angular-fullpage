@@ -5,9 +5,12 @@
 	<li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
 </ul>
 
-<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
+<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)" #fullpageRef>
     <div class="section">Some section1</div>
-	<div class="section" (click)="fullpage_api.moveSectionDown()">Some section2</div>
+	<div class="section">
+		Some section2
+		<button (click)="fullpage_api.moveSectionDown()">Move down</button>
+	</div>
 	<div class="section">
 		<div class="slide">Slide 2.1</div>
 		<div class="slide">Slide 2.2</div>
@@ -16,5 +19,9 @@
 			<a routerLink="secondTest">name</a>
 		</div>
 	</div>
-	<div class="section" (click)="fullpage_api.moveTo('secondPage', 2)">Some section4</div>
+	<div class="section">
+		Some section4
+		<button (click)="testRebuild()">Test rebuild options</button>
+		<button (click)="fullpage_api.moveTo('secondPage', 2)">Move to second page</button>
+	</div>
 </div>

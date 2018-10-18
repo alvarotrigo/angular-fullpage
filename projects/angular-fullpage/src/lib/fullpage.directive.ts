@@ -14,13 +14,29 @@ export class FullpageDirective implements OnInit, OnDestroy {
   constructor() { }
 
   ngOnInit() {
+    this.initFullpage();
+    this.addBuildFunction();
+  }
+
+  initFullpage() {
     this.fullpage_api = new fullpage('#' + this.id, this.options);
     this.ref.emit(this.fullpage_api);
   }
 
-  ngOnDestroy() {
+  addBuildFunction() {
+    this.fullpage_api.build = () => {
+      this.destroyFullpage();
+      this.initFullpage();
+    };
+  }
+
+  destroyFullpage() {
     if (typeof this.fullpage_api !== 'undefined' && typeof this.fullpage_api.destroy !== 'undefined') {
       this.fullpage_api.destroy('all');
     }
+  }
+
+  ngOnDestroy() {
+    this.destroyFullpage();
   }
 }

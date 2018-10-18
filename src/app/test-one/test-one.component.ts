@@ -1,16 +1,16 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-test-one',
   templateUrl: './test-one.component.html',
-  styleUrls: ['./test-one.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./test-one.component.scss']
 })
 export class TestOneComponent implements OnInit {
+  @ViewChild('fullpageRef') fp_directive: ElementRef;
   config: any;
   fullpage_api: any;
 
-  constructor() {
+  constructor(private renderer: Renderer2) {
 
     // this is just an example => for more details on config please visit fullPage.js docs
     this.config = {
@@ -36,23 +36,21 @@ export class TestOneComponent implements OnInit {
       sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
       paddingTop: '3em',
       paddingBottom: '10px',
-      parallax: true,
-      parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
 
       lazyLoad: true,
 
       // events callback
-      onLeave: (origin, destination, direction) => {
-        console.log('onLeave');
-      },
       afterLoad: (origin, destination, direction) => {
-        console.log('afterLoad');
+        console.log(destination);
       },
       afterRender: () => {
         console.log('afterRender');
       },
       afterResize: (width, height) => {
-        console.log('afterResize');
+        console.log('afterResize' + width + ' ' + height);
+      },
+      afterSlideLoad: (section, origin, destination, direction) => {
+        console.log(destination);
       }
     };
   }
@@ -63,5 +61,20 @@ export class TestOneComponent implements OnInit {
   getRef(fullPageRef) {
     console.log('created');
     this.fullpage_api = fullPageRef;
+  }
+
+  testRebuild() {
+    // change background color
+    this.config['sectionsColor'] = ['#a06080', '#a06080', '#a06080', '#a06080', '#a06080'];
+
+    // creating the section div
+    const section = this.renderer.createElement('div');
+    this.renderer.addClass(section, 'section');
+    this.renderer.setProperty(section, 'innerHTML', '<h3>New Section</h3>');
+
+    // adding section
+    this.renderer.appendChild(this.fp_directive.nativeElement, section);
+
+    this.fullpage_api.build();
   }
 }

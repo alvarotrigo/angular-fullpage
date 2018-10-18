@@ -70,26 +70,6 @@ adding fullpage directive
 </div>
 ```
 
-If you need to override the default css you need to change View Encapsulation
-
-```typescript
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
-  encapsulation: ViewEncapsulation.None  // <-------
-})
-```
-
-example overide the padding of control arrow
-
-```css
-.fp-controlArrow {
-    padding: 0 2%;
-}
-```
-
-
 Extensions
 ...
 
@@ -106,6 +86,6 @@ Add extension.js file to angular.json
 ],
 
 "scripts": [
-  "src/assets/_your_extension_file.js"
+  "src/assets/_your_extension_file.js" <--
 ],
 ```
