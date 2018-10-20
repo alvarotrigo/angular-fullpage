@@ -1,4 +1,4 @@
-import { Directive, Input, OnInit, OnDestroy, Output, EventEmitter } from '@angular/core';
+import { Directive, Input, OnInit, OnDestroy, Output, EventEmitter, Renderer2 } from '@angular/core';
 import fullpage from 'fullpage.js/dist/fullpage.extensions.min';
 
 @Directive({
@@ -11,7 +11,7 @@ export class FullpageDirective implements OnInit, OnDestroy {
   @Output() ref = new EventEmitter();
   fullpage_api;
 
-  constructor() { }
+  constructor(private renderer: Renderer2) { }
 
   ngOnInit() {
     this.initFullpage();
@@ -25,16 +25,26 @@ export class FullpageDirective implements OnInit, OnDestroy {
 
   addBuildFunction() {
     this.fullpage_api.build = () => {
-      this.destroyFullpage();
+      const activeSection = this.fullpage_api.getActiveSection();
+      const activeSlide = this.fullpage_api.getActiveSlide();
+
       // bug destroy(all) also destroyed angular events such as (click)
-      // https://github.com/alvarotrigo/fullPage.js/blob/3f2a8ef9405d64a7d24460811435c561870f9259/dist/fullpage.js#L3035
+      this.destroyFullpage();
+
+      if (activeSection) {
+        this.renderer.addClass(activeSection.item, 'active');
+      }
+
+      if (activeSlide) {
+        this.renderer.addClass(activeSlide.item, 'active');
+      }
+
       this.initFullpage();
     };
   }
 
   destroyFullpage() {
     if (typeof this.fullpage_api !== 'undefined' && typeof this.fullpage_api.destroy !== 'undefined') {
-      console.log('destoyred');
       this.fullpage_api.destroy('all');
     }
   }

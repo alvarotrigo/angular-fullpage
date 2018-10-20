@@ -41,16 +41,16 @@ export class TestOneComponent implements OnInit {
 
       // events callback
       afterLoad: (origin, destination, direction) => {
-        console.log(destination);
+        // console.log(destination);
       },
       afterRender: () => {
-        console.log('afterRender');
+        // console.log('afterRender');
       },
       afterResize: (width, height) => {
-        console.log('afterResize' + width + ' ' + height);
+        // console.log('afterResize' + width + ' ' + height);
       },
       afterSlideLoad: (section, origin, destination, direction) => {
-        console.log(destination);
+        // console.log(destination);
       }
     };
   }
@@ -59,7 +59,6 @@ export class TestOneComponent implements OnInit {
   }
 
   getRef(fullPageRef) {
-    console.log('created');
     this.fullpage_api = fullPageRef;
   }
 
