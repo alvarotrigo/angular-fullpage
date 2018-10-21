@@ -9,7 +9,9 @@
     <div class="section">Some section1</div>
 	<div class="section">
 		Some section2
+		<button (click)="testRebuild()">Add sections and change color</button>
 		<button (click)="fullpage_api.moveSectionDown()">Move down</button>
+		<button (click)="removeLast()">Remove last</button>
 	</div>
 	<div class="section">
 		<div class="slide">Slide 2.1</div>
@@ -21,7 +23,8 @@
 	</div>
 	<div class="section">
 		Some section4
-		<button (click)="testRebuild()">Test rebuild options</button>
+		<button (click)="testRebuild()">Add sections and change color</button>
 		<button (click)="fullpage_api.moveTo('secondPage', 2)">Move to second page</button>
+		<button (click)="removeLast()">Remove last</button>
 	</div>
 </div>
