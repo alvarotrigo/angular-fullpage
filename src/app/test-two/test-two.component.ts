@@ -14,6 +14,7 @@ export class TestTwoComponent implements OnInit {
     // this is just an example => for more details on config please visit fullPage.js docs
     this.config = {
       licenseKey: 'YOUR LICENSE KEY HERE',
+
       // Navigation
       anchors: ['p1', 'p2', 'p3', 'p4', 'p5'],
       navigation: true,
@@ -21,12 +22,15 @@ export class TestTwoComponent implements OnInit {
       showActiveTooltip: true,
       slidesNavigation: true,
       slidesNavPosition: 'bottom',
+
       // Scrolling
       autoScrolling: true,
       offsetSections: false,
+
       //  Accessibility
       keyboardScrolling: true,
       animateAnchor: true,
+
       // Design
       sectionsColor: ['#7BAABE', 'whitesmoke', '#7BAABE', 'whitesmoke', '#7BAABE'],
       paddingTop: '3em',
