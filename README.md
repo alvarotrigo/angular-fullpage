@@ -25,7 +25,7 @@ This project was generated with [Angular CLI] version 6.2.4.
 ## Installation
 
 ```shell
-npm install --save fullpage.js
+npm install @fullpage/angular-fullpage
 ```
 
 This will install the Angular wrapper as well as [fullpage.js](https://github.com/alvarotrigo/fullPage.js/) library.
