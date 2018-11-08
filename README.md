@@ -123,7 +123,7 @@ For example, if we want to use the `scrollHorizontally` extension we will have t
 ],
 ```
 
-## Use of scrollOverflow
+### Use of scrollOverflow
 Same procedure than the [use of extensions](https://github.com/alvarotrigo/angular-fullpage#use-extensions) detailed above.
 
 ## Examples
