@@ -1,11 +1,18 @@
-# angular-fullpage
+# Angular fullpage
 Official Angular wrapper for fullPage.js
+
+![preview](https://alvarotrigo.com/angular-fullpage/imgs/angular-fullpage-wrapper.png)
+<p align="center">
+Official Angular wrapper for the <a target="_blank" href="https://github.com/alvarotrigo/fullPage.js/">fullpage.js library</a>.
+</p>
+
 
 This project was generated with [Angular CLI] version 6.2.4.
 
 
+```shell
 npm install --save fullpage.js
-
+```
 
 ```typescript
 import { AngularFullpageModule } from 'angular-fullpage';
@@ -25,7 +32,7 @@ In your style.scss or component.scss
 @import url(~fullpage.js/dist/fullpage.min.css);
 ```
 
-example include fullpage directive in your component
+Example include fullpage directive in your component
 
 ```typescript
 export class AppComponent {
@@ -56,7 +63,7 @@ export class AppComponent {
 
 ```
 
-adding fullpage directive
+Adding fullpage directive
 ```html
 <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
   <div class="section">Some section1</div>
