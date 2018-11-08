@@ -1,6 +1,14 @@
 {
-  "name": "fullpage",
-  "version": "0.0.0",
+  "name": "@fullpage/angular-fullpage",
+  "version": "0.0.1",
+  "description": "Official Angular wrapper for fullPage.js",
+  "author": "vh13294",
+  "contributors": [
+    "vh13294",
+    "alvarotrigo"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/alvarotrigo/angular-fullpage",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,6 +16,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alvarotrigo/angular-fullpage"
   },
   "private": true,
   "dependencies": {
