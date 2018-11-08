@@ -13,7 +13,7 @@ export class TestTwoComponent implements OnInit {
 
     // this is just an example => for more details on config please visit fullPage.js docs
     this.config = {
-      licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+      licenseKey: 'YOUR LICENSE KEY HERE',
       // Navigation
       anchors: ['p1', 'p2', 'p3', 'p4', 'p5'],
       navigation: true,
