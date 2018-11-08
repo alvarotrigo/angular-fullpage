@@ -1,13 +1,18 @@
 # Angular fullpage
 Official Angular wrapper for fullPage.js
 
-![preview](https://alvarotrigo.com/angular-fullpage/imgs/angular-fullpage-wrapper.png)
+![preview](https://alvarotrigo.com/angular-fullpage/imgs/angular-fullpage-wrapper.png?v=2)
 <p align="center">
 Official Angular wrapper for the <a target="_blank" href="https://github.com/alvarotrigo/fullPage.js/">fullpage.js library</a>.
 </p>
 
-
 This project was generated with [Angular CLI] version 6.2.4.
+
+
+- [Demo online](https://alvarotrigo.com/angular-fullpage/) | [CodeSandbox](https://codesandbox.io/s/m34yq5q0qx)
+- [fullpage.js Extensions](https://alvarotrigo.com/fullPage/extensions/)
+- Brought by [@imac2](https://twitter.com/imac2) thanks to [Vong Panha Huot
+](https://github.com/vh13294).
 
 
 ```shell
