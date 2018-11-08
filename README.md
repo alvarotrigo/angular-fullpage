@@ -104,8 +104,6 @@ Adding fullpage directive:
 ```
 
 ### Use extensions
-...
-
 In order to make use of [fullpage.js extension](https://alvarotrigo.com/fullPage/extensions/) you'll have to add the extension file to `angular.json`.
 
 For example, if we want to use the `scrollHorizontally` extension we will have to add the path to our `fullpage.scrollHorizontally.min.js` file on the `scripts` array:
