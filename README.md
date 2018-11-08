@@ -47,8 +47,8 @@ import { AngularFullpageModule } from 'angular-fullpage';
 
 In your style.scss or component.scss
 
-```css
-// styles.scss or xxx.component.scss
+```scss
+/* styles.scss or xxx.component.scss */
 @import url(~fullpage.js/dist/fullpage.min.css);
 ```
 
