@@ -131,7 +131,7 @@ You can check some examples on the [`src` folder](https://github.com/alvarotrigo
 
 ## Contributing
 
-Found an issue? Have an idea? Check out the [Contributing](https://github.com/alvarotrigo/react-fullpage/blob/master/CONTRIBUTING.md) guide and open a PR
+Found an issue? Have an idea? Check out the [Contributing](https://github.com/alvarotrigo/angular-fullpage/blob/master/CONTRIBUTING.md) guide and open a PR
 
 ## Resources
 
