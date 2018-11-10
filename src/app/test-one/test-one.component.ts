@@ -7,8 +7,8 @@ import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/co
 })
 export class TestOneComponent implements OnInit {
   @ViewChild('fullpageRef') fp_directive: ElementRef;
-  config: any;
-  fullpage_api: any;
+  config;
+  fullpage_api;
 
   constructor(private renderer: Renderer2) {
 
@@ -28,6 +28,7 @@ export class TestOneComponent implements OnInit {
       // Scrolling
       autoScrolling: true,
       offsetSections: false,
+      scrollOverflow: true,
 
       //  Accessibility
       keyboardScrolling: true,
@@ -63,7 +64,7 @@ export class TestOneComponent implements OnInit {
     this.fullpage_api = fullPageRef;
   }
 
-  testRebuild() {
+  addSection() {
     // change background color
     this.config['sectionsColor'] = Array(6).fill(0).map(x => this.randomColor());
 

@@ -1,5 +1,5 @@
 <ul id="menu">
-	<li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
+	<li data-menuanchor="firstPage"><a href="#firstPage">First section</a></li>
 	<li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
 	<li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
 	<li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
@@ -9,7 +9,7 @@
     <div class="section">Some section1</div>
 	<div class="section">
 		Some section2
-		<button (click)="testRebuild()">Add sections and change color</button>
+		<button (click)="addSection()">Add sections and change color</button>
 		<button (click)="fullpage_api.moveSectionDown()">Move down</button>
 		<button (click)="removeLast()">Remove last</button>
 	</div>
@@ -23,7 +23,7 @@
 	</div>
 	<div class="section">
 		Some section4
-		<button (click)="testRebuild()">Add sections and change color</button>
+		<button (click)="addSection()">Add sections and change color</button>
 		<button (click)="fullpage_api.moveTo('secondPage', 2)">Move to second page</button>
 		<button (click)="removeLast()">Remove last</button>
 	</div>

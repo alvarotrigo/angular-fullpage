@@ -48,7 +48,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/fullpage.js/vendors/scrolloverflow.min.js"
+            ]
           },
           "configurations": {
             "production": {
