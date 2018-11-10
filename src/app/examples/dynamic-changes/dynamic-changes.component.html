@@ -6,23 +6,23 @@
 </ul>
 
 <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)" #fullpageRef>
-    <div class="section">Some section1</div>
+    <div class="section"><h1>Section 1</h1></div>
 	<div class="section">
-		Some section2
+		<h1>Section 2</h1>
 		<button (click)="addSection()">Add sections and change color</button>
 		<button (click)="fullpage_api.moveSectionDown()">Move down</button>
 		<button (click)="removeLast()">Remove last</button>
 	</div>
 	<div class="section">
-		<div class="slide">Slide 2.1</div>
-		<div class="slide">Slide 2.2</div>
+		<div class="slide"><h1>Slide 3.1</h1> </div>
+		<div class="slide"><h1>Slide 3.2</h1></div>
 		<div class="slide">
-			Slide 2.3
+			<h1>Slide 3.3</h1>
 			<a routerLink="secondTest">name</a>
 		</div>
 	</div>
 	<div class="section">
-		Some section4
+		<h1>Section 4</h1>
 		<button (click)="addSection()">Add sections and change color</button>
 		<button (click)="fullpage_api.moveTo('secondPage', 2)">Move to second page</button>
 		<button (click)="removeLast()">Remove last</button>

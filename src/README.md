@@ -17,6 +17,6 @@ ng serve --open
 
 A page will open in the browser, where you'll be able to swap between examles by accessing one or anothe URL:
 
-> http://localhost:4200/
-
-> http://localhost:4200/secondTest
+- http://localhost:4200/
+- http://localhost:4200/dynamicChanges
+- http://localhost:4200/scrollOverflow

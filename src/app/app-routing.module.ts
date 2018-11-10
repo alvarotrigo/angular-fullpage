@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { TestOneComponent } from './test-one/test-one.component';
-import { TestTwoComponent } from './test-two/test-two.component';
+import { BasicExampleComponent } from './examples/basic/basic.component';
+import { DynamicChangesExampleComponent } from './examples/dynamic-changes/dynamic-changes.component';
+import { ScrollOverflowExampleComponent } from './examples/scrolloverflow/scrolloverflow.component';
+
 
 const routes: Routes = [
-  { path: '', component: TestOneComponent, pathMatch: 'full' },
-  { path: 'secondTest', component: TestTwoComponent }
+  { path: '', component: BasicExampleComponent, pathMatch: 'full' },
+  { path: 'dynamicChanges', component: DynamicChangesExampleComponent },
+  { path: 'scrollOverflow', component: ScrollOverflowExampleComponent }
 ];
 
 @NgModule({

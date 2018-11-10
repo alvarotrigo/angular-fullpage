@@ -1,45 +1,24 @@
 import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
-  selector: 'app-test-one',
-  templateUrl: './test-one.component.html',
-  styleUrls: ['./test-one.component.scss']
+  selector: 'app-dynamicChanges',
+  templateUrl: './dynamic-changes.component.html',
+  styleUrls: ['./dynamic-changes.component.scss']
 })
-export class TestOneComponent implements OnInit {
+export class DynamicChangesExampleComponent implements OnInit {
   @ViewChild('fullpageRef') fp_directive: ElementRef;
-  config;
-  fullpage_api;
+  config: any;
+  fullpage_api: any;
 
   constructor(private renderer: Renderer2) {
 
     // this is just an example => for more details on config please visit fullPage.js docs
     this.config = {
       licenseKey: 'YOUR LICENSE KEY HERE',
-
-      // Navigation
       anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
       menu: '#menu',
       navigation: true,
-      navigationPosition: 'right',
-      showActiveTooltip: true,
-      slidesNavigation: true,
-      slidesNavPosition: 'bottom',
-
-      // Scrolling
-      autoScrolling: true,
-      offsetSections: false,
-      scrollOverflow: true,
-
-      //  Accessibility
-      keyboardScrolling: true,
-      animateAnchor: true,
-
-      // Design
       sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-      paddingTop: '3em',
-      paddingBottom: '10px',
-
-      lazyLoad: true,
 
       // events callback
       afterLoad: (origin, destination, direction) => {
