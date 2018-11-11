@@ -63,8 +63,8 @@ export class DynamicChangesExampleComponent implements OnInit {
     if (lastSection.isEqualNode(this.fullpage_api.getActiveSection().item)) {
       this.fullpage_api.moveSectionUp();
     }
-
     lastSection.remove();
+
     this.fullpage_api.build();
   }
 

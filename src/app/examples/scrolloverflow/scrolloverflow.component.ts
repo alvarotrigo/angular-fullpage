@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-scrolloverflow',
@@ -6,11 +6,10 @@ import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/co
   styleUrls: ['./scrolloverflow.component.scss']
 })
 export class ScrollOverflowExampleComponent implements OnInit {
-  @ViewChild('fullpageRef') fp_directive: ElementRef;
   config;
   fullpage_api;
 
-  constructor(private renderer: Renderer2) {
+  constructor() {
 
     // this is just an example => for more details on config please visit fullPage.js docs
     this.config = {

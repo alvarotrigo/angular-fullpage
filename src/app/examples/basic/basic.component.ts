@@ -24,7 +24,6 @@ export class BasicExampleComponent implements OnInit {
   }
 
   getRef(fullPageRef) {
-    console.log('created');
     this.fullpage_api = fullPageRef;
   }
 
