@@ -63,8 +63,8 @@ export class AnchorLinkDirective {
 
   @HostListener('click', ['$event']) onClick(event) {
     if (this.href.length > 0 && this.href[0] === '#') {
-      window.location.hash = this.href;
       event.preventDefault();
+      window.location.hash = this.href;
     }
   }
 }

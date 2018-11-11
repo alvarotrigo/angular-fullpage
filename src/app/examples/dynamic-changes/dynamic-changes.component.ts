@@ -7,8 +7,8 @@ import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/co
 })
 export class DynamicChangesExampleComponent implements OnInit {
   @ViewChild('fullpageRef') fp_directive: ElementRef;
-  config: any;
-  fullpage_api: any;
+  config;
+  fullpage_api;
 
   constructor(private renderer: Renderer2) {
 
