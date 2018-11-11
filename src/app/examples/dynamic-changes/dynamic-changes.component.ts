@@ -1,7 +1,7 @@
 import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
-  selector: 'app-dynamicChanges',
+  selector: 'app-dynamic-changes',
   templateUrl: './dynamic-changes.component.html',
   styleUrls: ['./dynamic-changes.component.scss']
 })

@@ -1,4 +1,4 @@
-import { Directive, Input, OnInit, OnDestroy, Output, EventEmitter, Renderer2 } from '@angular/core';
+import { Directive, Input, OnInit, OnDestroy, Output, EventEmitter, Renderer2, HostListener } from '@angular/core';
 import fullpage from 'fullpage.js/dist/fullpage.extensions.min';
 
 @Directive({
@@ -51,5 +51,20 @@ export class FullpageDirective implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.destroyFullpage();
+  }
+}
+
+@Directive({
+  // tslint:disable-next-line:directive-selector
+  selector : '[href]'
+})
+export class AnchorLinkDirective {
+  @Input() href: string;
+
+  @HostListener('click', ['$event']) onClick(event) {
+    if (this.href.length > 0 && this.href[0] === '#') {
+      window.location.hash = this.href;
+      event.preventDefault();
+    }
   }
 }

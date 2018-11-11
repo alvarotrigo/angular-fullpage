@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import { FullpageDirective } from './fullpage.directive';
+import { FullpageDirective, AnchorLinkDirective } from './fullpage.directive';
 
 @NgModule({
   imports: [],
-  declarations: [FullpageDirective],
-  exports: [FullpageDirective]
+  declarations: [FullpageDirective, AnchorLinkDirective],
+  exports: [FullpageDirective, AnchorLinkDirective]
 })
 export class AngularFullpageModule { }
