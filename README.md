@@ -158,7 +158,7 @@ Same procedure than the [use of extensions](https://github.com/alvarotrigo/angul
 ```
 
 ## Dynamic Changes
-If you want to update fullPage.js changes in the DOM call the `build()` method after making those changes.
+If you want to update fullPage.js with new changes in the DOM call the `build()` method after making those changes.
 
 An example can be seen on the [dynamic-changes example](https://github.com/alvarotrigo/angular-fullpage/blob/master/src/app/examples/dynamic-changes/dynamic-changes.component.ts#L46):
 
