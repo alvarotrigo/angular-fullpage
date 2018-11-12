@@ -76,6 +76,7 @@ export class AppComponent {
 
     // for more details on config options please visit fullPage.js docs
     this.config = {
+
       // fullpage options
       licenseKey: 'YOUR LICENSE KEY HERE',
       anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
@@ -153,6 +154,16 @@ Same procedure than the [use of extensions](https://github.com/alvarotrigo/angul
 "scripts": [
   "node_modules/fullpage.js/vendors/scrolloverflow.min.js"
 ],
+```
+
+## Dynamic Changes
+If you want to update fullPage.js changes in the DOM call the `build()` method after making those changes.
+
+An example can be seen on the [dynamic-changes example](https://github.com/alvarotrigo/angular-fullpage/blob/master/src/app/examples/dynamic-changes/dynamic-changes.component.ts#L46):
+
+```javacript
+this.renderer.appendChild(this.fp_directive.nativeElement, section);
+this.fullpage_api.build(); // <-- here
 ```
 
 ## Examples
