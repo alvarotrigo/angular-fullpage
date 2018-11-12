@@ -31,7 +31,7 @@ This will install the Angular wrapper as well as [fullpage.js](https://github.co
 
 ### Non open source license
 
-Although angular-fullpage is under the MIT license as can be seen on the [LICENSE file](https://github.com/alvarotrigo/angular-fullpage/blob/master/LICENSE), notice [fullPage.js library](https://github.com/alvarotrigo/fullPage.js) is under GPLv3. Therefore you'll need to purchase a Commercial License for fullPage.js if you want to use fullPage to develop non open sourced sites, themes, projects, and applications. [[Purchase a Fullpage non open source License]](https://alvarotrigo.com/fullPage/pricing/)
+If you want to use angular-fullpage to develop non open sourced sites, themes, projects, and applications, the Commercial license is the appropriate license. With this option, your source code is kept proprietary. Which means, you won't have to change your whole application source code to an open source license. [Purchase a Fullpage Commercial License]
 
 ### Open source license
 
