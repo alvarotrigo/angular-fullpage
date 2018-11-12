@@ -16,6 +16,7 @@ Official Angular wrapper for the <a target="_blank" href="https://github.com/alv
 - [Usage](https://github.com/alvarotrigo/angular-fullpage#usage)
   - [Use extensions](https://github.com/alvarotrigo/angular-fullpage#use-extensions)
   - [Use scrolloverflow](https://github.com/alvarotrigo/angular-fullpage#use-of-scrolloverflow)
+- [Dynamic changes](https://github.com/alvarotrigo/angular-fullpage#dynamic-changes)
 - [Examples](https://github.com/alvarotrigo/angular-fullpage#examples)
 - [Contributing](https://github.com/alvarotrigo/angular-fullpage#contributing)
 - [Resources](https://github.com/alvarotrigo/angular-fullpage#resources)
