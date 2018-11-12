@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./basic.component.scss']
 })
 export class BasicExampleComponent implements OnInit {
-  config: any;
-  fullpage_api: any;
+  config;
+  fullpage_api;
 
   constructor() {
 
@@ -24,7 +24,6 @@ export class BasicExampleComponent implements OnInit {
   }
 
   getRef(fullPageRef) {
-    console.log('created');
     this.fullpage_api = fullPageRef;
   }
 

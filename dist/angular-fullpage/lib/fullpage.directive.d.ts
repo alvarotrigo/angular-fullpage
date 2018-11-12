@@ -12,3 +12,7 @@ export declare class FullpageDirective implements OnInit, OnDestroy {
     destroyFullpage(): void;
     ngOnDestroy(): void;
 }
+export declare class AnchorLinkDirective {
+    href: string;
+    onClick(event: any): void;
+}

@@ -1,14 +1,14 @@
 import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
-  selector: 'app-dynamicChanges',
+  selector: 'app-dynamic-changes',
   templateUrl: './dynamic-changes.component.html',
   styleUrls: ['./dynamic-changes.component.scss']
 })
 export class DynamicChangesExampleComponent implements OnInit {
   @ViewChild('fullpageRef') fp_directive: ElementRef;
-  config: any;
-  fullpage_api: any;
+  config;
+  fullpage_api;
 
   constructor(private renderer: Renderer2) {
 
@@ -63,8 +63,8 @@ export class DynamicChangesExampleComponent implements OnInit {
     if (lastSection.isEqualNode(this.fullpage_api.getActiveSection().item)) {
       this.fullpage_api.moveSectionUp();
     }
-
     lastSection.remove();
+
     this.fullpage_api.build();
   }
 
