@@ -27,10 +27,24 @@ npm install @fullpage/angular-fullpage
 
 This will install the Angular wrapper as well as [fullpage.js](https://github.com/alvarotrigo/fullPage.js/) library.
 
+## License
+
+### Non open source license
+
+Although angular-fullpage is under the MIT license as can be seen on the [LICENSE file](https://github.com/alvarotrigo/angular-fullpage/blob/master/LICENSE), notice [fullPage.js library](https://github.com/alvarotrigo/fullPage.js) is under GPLv3. Therefore you'll need to purchase a Commercial License for fullPage.js if you want to use fullPage to develop non open sourced sites, themes, projects, and applications. [[Purchase a Fullpage non open source License]](https://alvarotrigo.com/fullPage/pricing/)
+
+### Open source license
+
+If you are creating an open source application under a license compatible with the [GNU GPL license v3](https://www.gnu.org/licenses/gpl-3.0.html), you may use fullPage under the terms of the GPLv3.
+
+**The credit comments in the JavaScript and CSS files should be kept intact** (even after combination or minification)
+
+[Read more about fullPage's license](https://alvarotrigo.com/fullPage/pricing/).
+
 ## Usage
 
 ```typescript
-// app.modules.ts
+// app.module.ts
 import { AngularFullpageModule } from 'angular-fullpage';
 
 @NgModule({
@@ -42,17 +56,17 @@ import { AngularFullpageModule } from 'angular-fullpage';
 })
 ```
 
-In your style.scss or component.scss
+You should import the fullpage.js stylesheet on your `style.scss` or `component.scss`:
 
 ```scss
-/* styles.scss or xxx.component.scss */
+/* styles.scss or app.component.scss */
 @import url(~fullpage.js/dist/fullpage.min.css);
 ```
 
-Using fullpage directive in your component
+Then use the directive on your component:
 
 ```typescript
-// xxx.component.ts
+// app.component.ts
 export class AppComponent {
   config: any;
   fullpage_api: any;
@@ -84,10 +98,10 @@ export class AppComponent {
 
 ```
 
-Adding fullpage directive:
+Example of HTML:
 
 ```html
-// xxx.component.html
+<!-- app.component.html -->
 <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
   <div class="section">Some section1</div>
 	<div class="section" (click)="fullpage_api.moveSectionDown()">Some section2</div>
@@ -105,7 +119,7 @@ In order to make use of [fullpage.js extension](https://alvarotrigo.com/fullPage
 
 For example, if we want to use the `scrollHorizontally` extension we will have to add the path to our `fullpage.scrollHorizontally.min.js` file on the `scripts` array:
 
-```javascript
+```json
 "assets": [
   "src/favicon.ico",
   "src/assets"
@@ -120,8 +134,25 @@ For example, if we want to use the `scrollHorizontally` extension we will have t
 ],
 ```
 
+Then pass the required options to fullPage.js. In this case `scrollHorizontally:true`.
+
 ### Use of scrollOverflow
 Same procedure than the [use of extensions](https://github.com/alvarotrigo/angular-fullpage#use-extensions) detailed above.
+
+```json
+"assets": [
+  "src/favicon.ico",
+  "src/assets"
+],
+
+"styles": [
+  "src/styles.css"
+],
+
+"scripts": [
+  "node_modules/fullpage.js/vendors/scrolloverflow.min.js"
+],
+```
 
 ## Examples
 You can check some examples on the [`src` folder](https://github.com/alvarotrigo/angular-fullpage/tree/master/src).
@@ -138,4 +169,6 @@ Found an issue? Have an idea? Check out the [Contributing](https://github.com/al
 - [fullPage.js unpakg CDN](https://unpkg.com/fullpage.js)
 - [fullPage.js jsDelivr CDN](http://www.jsdelivr.com/#!jquery.fullpage)
 - [fullPage.js cdnJS CDN](https://cdnjs.com/libraries/fullPage.js)
+- [fullPage.js documentation](https://github.com/alvarotrigo/fullPage.js)
+
 
