@@ -8,6 +8,10 @@
     "alvarotrigo"
   ],
   "license": "MIT",
+  "main": "dist/angular-fullpage",
+  "files":[
+    "dist"
+  ],
   "homepage": "https://github.com/alvarotrigo/angular-fullpage",
   "scripts": {
     "ng": "ng",
@@ -21,7 +25,7 @@
     "type": "git",
     "url": "https://github.com/alvarotrigo/angular-fullpage"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^6.1.10",
     "@angular/common": "^6.1.10",
