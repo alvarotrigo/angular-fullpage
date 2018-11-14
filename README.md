@@ -3,6 +3,9 @@
 <p align="center">
 Official Angular wrapper for the <a target="_blank" href="https://github.com/alvarotrigo/fullPage.js/">fullpage.js library</a>.
 </p>
+<p align="center">
+  <img src="https://img.shields.io/badge/react--fullpage-v0.0.4-brightgreen.svg" alt="angular-fullpage version" />
+</p>
 
 - [Demo online](https://alvarotrigo.com/angular-fullpage/) | [CodeSandbox](https://codesandbox.io/s/m34yq5q0qx)
 - [fullpage.js Extensions](https://alvarotrigo.com/fullPage/extensions/)
