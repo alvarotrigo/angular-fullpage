@@ -4,10 +4,10 @@
 Official Angular wrapper for the <a target="_blank" href="https://github.com/alvarotrigo/fullPage.js/">fullpage.js library</a>.
 </p>
 <p align="center">
-  <img src="https://img.shields.io/badge/react--fullpage-v0.0.5-brightgreen.svg" alt="angular-fullpage version" />
+  <img src="https://img.shields.io/badge/angular--fullpage-v0.0.6-brightgreen.svg" alt="angular-fullpage version" />
 </p>
 
-- [Demo online](https://alvarotrigo.com/angular-fullpage/) | [CodeSandbox](https://codesandbox.io/s/m34yq5q0qx)
+- [Demo online](https://alvarotrigo.com/angular-fullpage/) | [Stackblitz](https://stackblitz.com/edit/angular-nqsqwk)
 - [fullpage.js Extensions](https://alvarotrigo.com/fullPage/extensions/)
 - Brought by [@imac2](https://twitter.com/imac2) thanks to [Vong Panha Huot
 ](https://github.com/vh13294).

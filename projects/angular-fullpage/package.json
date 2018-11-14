@@ -1,6 +1,6 @@
 {
-  "name": "angular-fullpage",
-  "version": "0.0.5",
+  "name": "@fullpage/angular-fullpage",
+  "version": "0.0.6",
   "description": "Official Angular wrapper for fullPage.js",
   "author": "vh13294",
   "contributors": [

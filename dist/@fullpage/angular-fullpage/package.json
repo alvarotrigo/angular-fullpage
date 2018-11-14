@@ -1,6 +1,6 @@
 {
-  "name": "angular-fullpage",
-  "version": "0.0.5",
+  "name": "@fullpage/angular-fullpage",
+  "version": "0.0.6",
   "description": "Official Angular wrapper for fullPage.js",
   "author": "vh13294",
   "contributors": [
@@ -17,15 +17,15 @@
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
   },
-  "main": "bundles/angular-fullpage.umd.js",
-  "module": "fesm5/angular-fullpage.js",
-  "es2015": "fesm2015/angular-fullpage.js",
-  "esm5": "esm5/angular-fullpage.js",
-  "esm2015": "esm2015/angular-fullpage.js",
-  "fesm5": "fesm5/angular-fullpage.js",
-  "fesm2015": "fesm2015/angular-fullpage.js",
-  "typings": "angular-fullpage.d.ts",
-  "metadata": "angular-fullpage.metadata.json",
+  "main": "bundles/fullpage-angular-fullpage.umd.js",
+  "module": "fesm5/fullpage-angular-fullpage.js",
+  "es2015": "fesm2015/fullpage-angular-fullpage.js",
+  "esm5": "esm5/fullpage-angular-fullpage.js",
+  "esm2015": "esm2015/fullpage-angular-fullpage.js",
+  "fesm5": "fesm5/fullpage-angular-fullpage.js",
+  "fesm2015": "fesm2015/fullpage-angular-fullpage.js",
+  "typings": "fullpage-angular-fullpage.d.ts",
+  "metadata": "fullpage-angular-fullpage.metadata.json",
   "sideEffects": false,
   "dependencies": {
     "tslib": "^1.9.0"
