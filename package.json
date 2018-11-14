@@ -7,7 +7,7 @@
     "vh13294",
     "alvarotrigo"
   ],
-  "license": "MIT",
+  "license": "GPL-3.0",
   "main": "dist/angular-fullpage",
   "files": [
     "dist"
