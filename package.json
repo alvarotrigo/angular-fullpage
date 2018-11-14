@@ -9,7 +9,7 @@
   ],
   "license": "MIT",
   "main": "dist/angular-fullpage",
-  "files":[
+  "files": [
     "dist"
   ],
   "homepage": "https://github.com/alvarotrigo/angular-fullpage",

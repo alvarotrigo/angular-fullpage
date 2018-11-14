@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/angular-fullpage",
+  "dest": "../../dist/@fullpage/angular-fullpage",
   "lib": {
     "entryFile": "src/public_api.ts",
     "umdModuleIds": {

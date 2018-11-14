@@ -1,0 +1,10 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,uselessCode} checked by tsc
+ */
+/**
+ * Generated bundle index. Do not edit.
+ */
+export { AngularFullpageModule } from './public_api';
+export { AnchorLinkDirective as ɵb, FullpageDirective as ɵa } from './lib/fullpage.directive';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnVsbHBhZ2UtYW5ndWxhci1mdWxscGFnZS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL0BmdWxscGFnZS9hbmd1bGFyLWZ1bGxwYWdlLyIsInNvdXJjZXMiOlsiZnVsbHBhZ2UtYW5ndWxhci1mdWxscGFnZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7O0FBSUEsc0NBQWMsY0FBYyxDQUFDO0FBRTdCLE9BQU8sRUFBQyxtQkFBbUIsSUFBSSxFQUFFLEVBQUMsaUJBQWlCLElBQUksRUFBRSxFQUFDLE1BQU0sMEJBQTBCLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEdlbmVyYXRlZCBidW5kbGUgaW5kZXguIERvIG5vdCBlZGl0LlxuICovXG5cbmV4cG9ydCAqIGZyb20gJy4vcHVibGljX2FwaSc7XG5cbmV4cG9ydCB7QW5jaG9yTGlua0RpcmVjdGl2ZSBhcyDJtWIsRnVsbHBhZ2VEaXJlY3RpdmUgYXMgybVhfSBmcm9tICcuL2xpYi9mdWxscGFnZS5kaXJlY3RpdmUnOyJdfQ==
