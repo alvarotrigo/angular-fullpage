@@ -2,29 +2,28 @@ declare module 'fullpage.js/dist/fullpage.extensions.min' {
     export default function(containerSelector: string, options: options): void;
 
     export interface options {
-        afterReBuild?: any;
-        afterResponsive?: any;
-        afterSlideLoad?: any;
+        afterReBuild?: void;
+        afterResponsive?: void;
+        afterSlideLoad?: void;
         anchors?: string[];
         animateAnchor?: boolean;
         autoScrolling?: boolean;
-        bigSectionsDestination?: any;
+        bigSectionsDestination?: any; //top, bottom, null
         continuousHorizontal?: boolean;
         continuousVertical?: boolean;
         controlArrowColor?: string;
         controlArrows?: boolean;
         css3?: boolean;
-        dragAndMove?: boolean;
+        dragAndMove?: any; //true, false, 'horizontal', 'fingersonly'
         easing?: string;
         easingcss3?: string;
-        fadingEffect?: boolean;
+        fadingEffect?: any; //true, false, 'sections', 'slides'
         fitToSection?: boolean;
         fitToSectionDelay?: number;
-        fixedElements?: any;
+        fixedElements?: string; // '#header, .footer'
         hybrid?: boolean;
-        interlockedSlides?: boolean;
+        interlockedSlides?: any; // true, false, [1, 3, 5]
         keyboardScrolling?: boolean;
-        lazyLoad?: boolean;
         lazyLoading?: boolean;
         licenseKey?: string;
         lockAnchors?: boolean;
@@ -34,15 +33,15 @@ declare module 'fullpage.js/dist/fullpage.extensions.min' {
         menu?: string;
         navigation?: boolean;
         navigationPosition?: string;
-        navigationTooltips?: any[];
+        navigationTooltips?: string[]; // ['firstSlide', 'secondSlide']
         normalScrollElementTouchThreshold?: number;
-        normalScrollElements?: any;
+        normalScrollElements?: string; // '#element1, .element2',
         offsetSections?: boolean;
-        onLeave?: any;
-        onSlideLeave?: any;
+        onLeave?: function;
+        onSlideLeave?: function;
         paddingBottom?: string;
         paddingTop?: string;
-        parallax?: boolean;
+        parallax?: any; // true, false, 'sections', 'slides'
         parallaxOptions?: {
             percentage?: number;
             property?: string;
