@@ -50,7 +50,7 @@ If you are creating an open source application under a license compatible with t
 
 ```typescript
 // app.module.ts
-import { AngularFullpageModule } from 'angular-fullpage';
+import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 
 @NgModule({
   imports: [
