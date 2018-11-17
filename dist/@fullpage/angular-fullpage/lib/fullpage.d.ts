@@ -66,14 +66,14 @@ declare module 'fullpage.js/dist/fullpage.extensions.min' {
         verticalCentered?: boolean;
 
         /* callback and events */
-        afterLoad?(): void;
+        afterLoad?(origin? :any, destination? :any, direction? :any): void;
         afterRender?(): void;
         afterResize?(width: number, height: number): void;
         afterReBuild?(): void;
-        afterResponsive?(): void;
-        afterSlideLoad?(): void;
-        onLeave?(): void;
-        onSlideLeave?(): void;
+        afterResponsive?(isResponsive?: any): void;
+        afterSlideLoad?(section? :any, origin? :any, destination? :any, direction? :any): void;
+        onLeave?(origin? :any, destination? :any, direction? :any): void;
+        onSlideLeave?(section? :any, origin? :any, destination? :any, direction? :any): void;
         
         /* keys for extensions */
         fadingEffectKey?: string;
