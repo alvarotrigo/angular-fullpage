@@ -1,6 +1,6 @@
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,uselessCode} checked by tsc
  */
 import { Directive, Input, Output, EventEmitter, Renderer2, HostListener } from '@angular/core';
 import fullpage from 'fullpage.js/dist/fullpage.extensions.min';

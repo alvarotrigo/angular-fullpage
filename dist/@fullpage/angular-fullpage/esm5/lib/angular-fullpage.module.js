@@ -1,6 +1,6 @@
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,uselessCode} checked by tsc
  */
 import { NgModule } from '@angular/core';
 import { FullpageDirective, AnchorLinkDirective } from './fullpage.directive';

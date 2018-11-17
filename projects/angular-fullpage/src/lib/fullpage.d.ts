@@ -2,9 +2,6 @@ declare module 'fullpage.js/dist/fullpage.extensions.min' {
     export default function(containerSelector: string, options: options): void;
 
     export interface options {
-        afterReBuild?: void;
-        afterResponsive?: void;
-        afterSlideLoad?: void;
         anchors?: string[];
         animateAnchor?: boolean;
         autoScrolling?: boolean;
@@ -37,8 +34,6 @@ declare module 'fullpage.js/dist/fullpage.extensions.min' {
         normalScrollElementTouchThreshold?: number;
         normalScrollElements?: string; // '#element1, .element2',
         offsetSections?: boolean;
-        onLeave?: function;
-        onSlideLeave?: function;
         paddingBottom?: string;
         paddingTop?: string;
         parallax?: any; // true, false, 'sections', 'slides'
@@ -69,9 +64,17 @@ declare module 'fullpage.js/dist/fullpage.extensions.min' {
         touchSensitivity?: number;
         v2compatible?: boolean;
         verticalCentered?: boolean;
+
+        /* callback and events */
         afterLoad?(): void;
         afterRender?(): void;
         afterResize?(width: number, height: number): void;
+        afterReBuild?(): void;
+        afterResponsive?(): void;
+        afterSlideLoad?(): void;
+        onLeave?(): void;
+        onSlideLeave?(): void;
+        
         /* keys for extensions */
         fadingEffectKey?: string;
         responsiveSlidesKey?: string;

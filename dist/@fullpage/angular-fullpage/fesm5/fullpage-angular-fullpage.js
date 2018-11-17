@@ -3,7 +3,7 @@ import fullpage from 'fullpage.js/dist/fullpage.extensions.min';
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,uselessCode} checked by tsc
  */
 var FullpageDirective = /** @class */ (function () {
     function FullpageDirective(renderer) {
@@ -122,7 +122,7 @@ var AnchorLinkDirective = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,uselessCode} checked by tsc
  */
 var AngularFullpageModule = /** @class */ (function () {
     function AngularFullpageModule() {
@@ -139,12 +139,12 @@ var AngularFullpageModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,uselessCode} checked by tsc
  */
 
 export { AngularFullpageModule, AnchorLinkDirective as ɵb, FullpageDirective as ɵa };
