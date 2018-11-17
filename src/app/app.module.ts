@@ -9,7 +9,7 @@ import { ScrollOverflowExampleComponent } from './examples/scrolloverflow/scroll
 
 
 // added
-import { AngularFullpageModule } from 'angular-fullpage';
+import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 
 @NgModule({
   declarations: [

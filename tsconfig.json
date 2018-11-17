@@ -18,11 +18,11 @@
       "dom"
     ],
     "paths": {
-      "angular-fullpage": [
-        "dist/angular-fullpage"
+      "@fullpage": [
+        "dist/@fullpage"
       ],
-      "angular-fullpage/*": [
-        "dist/angular-fullpage/*"
+      "@fullpage/*": [
+        "dist/@fullpage/*"
       ]
     }
   }
