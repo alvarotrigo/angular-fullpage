@@ -15,7 +15,8 @@
   "license": "GPL-3.0",
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
-    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
+    "fullpage.js": "^3.0.3"
   },
   "main": "bundles/fullpage-angular-fullpage.umd.js",
   "module": "fesm5/fullpage-angular-fullpage.js",

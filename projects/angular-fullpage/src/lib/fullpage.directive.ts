@@ -1,4 +1,5 @@
-import { Directive, Input, OnInit, OnDestroy, Output, EventEmitter, Renderer2, HostListener } from '@angular/core';
+import { Directive, Input, OnInit, OnDestroy, Output, EventEmitter, Renderer2, HostListener, PLATFORM_ID, Inject } from '@angular/core';
+import { isPlatformBrowser, isPlatformServer } from '@angular/common';
 import fullpage from 'fullpage.js/dist/fullpage.extensions.min';
 
 @Directive({
@@ -11,10 +12,18 @@ export class FullpageDirective implements OnInit, OnDestroy {
   @Output() ref = new EventEmitter();
   fullpage_api;
 
-  constructor(private renderer: Renderer2) { }
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private renderer: Renderer2
+  ) { }
 
   ngOnInit() {
-    this.initFullpage();
+    if (isPlatformBrowser(this.platformId)) {
+      this.initFullpage();
+    }
+    if (isPlatformServer(this.platformId)) {
+      // server side code
+    }
   }
 
   initFullpage() {
