@@ -2,29 +2,25 @@ declare module 'fullpage.js/dist/fullpage.extensions.min' {
     export default function(containerSelector: string, options: options): void;
 
     export interface options {
-        afterReBuild?: any;
-        afterResponsive?: any;
-        afterSlideLoad?: any;
         anchors?: string[];
         animateAnchor?: boolean;
         autoScrolling?: boolean;
-        bigSectionsDestination?: any;
+        bigSectionsDestination?: any; //top, bottom, null
         continuousHorizontal?: boolean;
         continuousVertical?: boolean;
         controlArrowColor?: string;
         controlArrows?: boolean;
         css3?: boolean;
-        dragAndMove?: boolean;
+        dragAndMove?: any; //true, false, 'horizontal', 'fingersonly'
         easing?: string;
         easingcss3?: string;
-        fadingEffect?: boolean;
+        fadingEffect?: any; //true, false, 'sections', 'slides'
         fitToSection?: boolean;
         fitToSectionDelay?: number;
-        fixedElements?: any;
+        fixedElements?: string; // '#header, .footer'
         hybrid?: boolean;
-        interlockedSlides?: boolean;
+        interlockedSlides?: any; // true, false, [1, 3, 5]
         keyboardScrolling?: boolean;
-        lazyLoad?: boolean;
         lazyLoading?: boolean;
         licenseKey?: string;
         lockAnchors?: boolean;
@@ -34,15 +30,13 @@ declare module 'fullpage.js/dist/fullpage.extensions.min' {
         menu?: string;
         navigation?: boolean;
         navigationPosition?: string;
-        navigationTooltips?: any[];
+        navigationTooltips?: string[]; // ['firstSlide', 'secondSlide']
         normalScrollElementTouchThreshold?: number;
-        normalScrollElements?: any;
+        normalScrollElements?: string; // '#element1, .element2',
         offsetSections?: boolean;
-        onLeave?: any;
-        onSlideLeave?: any;
         paddingBottom?: string;
         paddingTop?: string;
-        parallax?: boolean;
+        parallax?: any; // true, false, 'sections', 'slides'
         parallaxOptions?: {
             percentage?: number;
             property?: string;
@@ -70,9 +64,17 @@ declare module 'fullpage.js/dist/fullpage.extensions.min' {
         touchSensitivity?: number;
         v2compatible?: boolean;
         verticalCentered?: boolean;
-        afterLoad?(): void;
+
+        /* callback and events */
+        afterLoad?(origin? :any, destination? :any, direction? :any): void;
         afterRender?(): void;
         afterResize?(width: number, height: number): void;
+        afterReBuild?(): void;
+        afterResponsive?(isResponsive?: any): void;
+        afterSlideLoad?(section? :any, origin? :any, destination? :any, direction? :any): void;
+        onLeave?(origin? :any, destination? :any, direction? :any): void;
+        onSlideLeave?(section? :any, origin? :any, destination? :any, direction? :any): void;
+        
         /* keys for extensions */
         fadingEffectKey?: string;
         responsiveSlidesKey?: string;
