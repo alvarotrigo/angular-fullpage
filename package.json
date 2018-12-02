@@ -16,7 +16,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build angular-fullpage",
+    "build:example": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
