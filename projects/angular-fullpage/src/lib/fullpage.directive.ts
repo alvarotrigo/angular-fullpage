@@ -1,6 +1,12 @@
 import { Directive, Input, OnInit, OnDestroy, Output, EventEmitter, Renderer2, HostListener, PLATFORM_ID, Inject } from '@angular/core';
 import { isPlatformBrowser, isPlatformServer } from '@angular/common';
-import fullpage from 'fullpage.js/dist/fullpage.extensions.min';
+
+declare var require;
+let fullpage = null;
+if (!fullpage && typeof window !== 'undefined') {
+  fullpage = require('fullpage.js/dist/fullpage.extensions.min');
+}
+
 
 @Directive({
   // tslint:disable-next-line:directive-selector
