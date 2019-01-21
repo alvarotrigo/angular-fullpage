@@ -68,6 +68,11 @@ You should import the fullpage.js stylesheet on your `style.scss` or `component.
 @import url(~fullpage.js/dist/fullpage.min.css);
 ```
 
+```css
+/* standard css */
+@import '~fullpage.js/dist/fullpage.min.css';
+```
+
 Then use the directive on your component:
 
 ```typescript
@@ -168,6 +173,13 @@ An example can be seen on the [dynamic-changes example](https://github.com/alvar
 ```javacript
 this.renderer.appendChild(this.fp_directive.nativeElement, section);
 this.fullpage_api.build(); // <-- here
+```
+
+With *ngFor
+```html
+<div *ngFor="let section of [1,2,3,4,5,6]" class="section">
+  <h1>Section {{section}}</h1>
+</div>
 ```
 
 ## Examples
