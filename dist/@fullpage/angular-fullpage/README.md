@@ -168,7 +168,7 @@ Same procedure than the [use of extensions](https://github.com/alvarotrigo/angul
 ## Dynamic Changes
 If you want to update fullPage.js with new changes in the DOM call the `build()` method after making those changes.
 
-An example can be seen on the [dynamic-changes example](https://github.com/alvarotrigo/angular-fullpage/blob/master/src/app/examples/dynamic-changes/dynamic-changes.component.ts#L46):
+An example can be seen on the [dynamic-changes example](https://github.com/alvarotrigo/angular-fullpage/blob/master/demo/app/examples/dynamic-changes/dynamic-changes.component.ts#L46):
 
 ```javacript
 this.renderer.appendChild(this.fp_directive.nativeElement, section);
@@ -183,7 +183,7 @@ With *ngFor
 ```
 
 ## Examples
-You can check some examples on the [`src` folder](https://github.com/alvarotrigo/angular-fullpage/tree/master/src).
+You can check some examples on the [`demo` folder](https://github.com/alvarotrigo/angular-fullpage/tree/master/demo).
 
 ## Contributing
 
