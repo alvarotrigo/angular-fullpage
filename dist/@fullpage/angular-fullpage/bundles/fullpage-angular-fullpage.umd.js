@@ -52,7 +52,6 @@
                     var activeSection = _this.fullpage_api.getActiveSection();
                     /** @type {?} */
                     var activeSlide = _this.fullpage_api.getActiveSlide();
-                    // bug destroy(all) also destroyed angular events such as (click)
                     _this.destroyFullpage();
                     if (activeSection) {
                         _this.renderer.addClass(activeSection.item, 'active');

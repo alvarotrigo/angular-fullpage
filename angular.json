@@ -36,7 +36,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/fullpage",
+            "outputPath": "dist/demo",
             "index": "demo/index.html",
             "main": "demo/main.ts",
             "polyfills": "demo/polyfills.ts",
@@ -148,32 +148,32 @@
       }
     },
     "angular-fullpage": {
-      "root": "projects/angular-fullpage",
-      "sourceRoot": "projects/angular-fullpage/src",
+      "root": "src",
+      "sourceRoot": "src/angular-fullpage",
       "projectType": "library",
       "prefix": "fp",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/angular-fullpage/tsconfig.lib.json",
-            "project": "projects/angular-fullpage/ng-package.json"
+            "tsConfig": "src/tsconfig.lib.json",
+            "project": "src/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/angular-fullpage/src/test.ts",
-            "tsConfig": "projects/angular-fullpage/tsconfig.spec.json",
-            "karmaConfig": "projects/angular-fullpage/karma.conf.js"
+            "main": "src/angular-fullpage/test.ts",
+            "tsConfig": "src/tsconfig.spec.json",
+            "karmaConfig": "src/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/angular-fullpage/tsconfig.lib.json",
-              "projects/angular-fullpage/tsconfig.spec.json"
+              "src/tsconfig.lib.json",
+              "src/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

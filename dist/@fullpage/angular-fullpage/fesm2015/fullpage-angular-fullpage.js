@@ -42,7 +42,6 @@ class FullpageDirective {
             const activeSection = this.fullpage_api.getActiveSection();
             /** @type {?} */
             const activeSlide = this.fullpage_api.getActiveSlide();
-            // bug destroy(all) also destroyed angular events such as (click)
             this.destroyFullpage();
             if (activeSection) {
                 this.renderer.addClass(activeSection.item, 'active');
