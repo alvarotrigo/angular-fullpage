@@ -38,7 +38,6 @@ export class FullpageDirective implements AfterViewInit, OnDestroy {
       const activeSection = this.fullpage_api.getActiveSection();
       const activeSlide = this.fullpage_api.getActiveSlide();
 
-      // bug destroy(all) also destroyed angular events such as (click)
       this.destroyFullpage();
 
       if (activeSection) {
