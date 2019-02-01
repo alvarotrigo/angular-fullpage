@@ -1,4 +1,5 @@
-import { Directive, Input, OnInit, OnDestroy, Output, EventEmitter, Renderer2, HostListener, PLATFORM_ID, Inject } from '@angular/core';
+// tslint:disable-next-line:max-line-length
+import { Directive, Input, AfterViewInit, OnDestroy, Output, EventEmitter, Renderer2, HostListener, PLATFORM_ID, Inject } from '@angular/core';
 import { isPlatformBrowser, isPlatformServer } from '@angular/common';
 import fullpage from 'fullpage.js/dist/fullpage.extensions.min';
 
@@ -6,7 +7,7 @@ import fullpage from 'fullpage.js/dist/fullpage.extensions.min';
   // tslint:disable-next-line:directive-selector
   selector: '[fullpage]'
 })
-export class FullpageDirective implements OnInit, OnDestroy {
+export class FullpageDirective implements AfterViewInit, OnDestroy {
   @Input() id;
   @Input() options;
   @Output() ref = new EventEmitter();
@@ -17,7 +18,7 @@ export class FullpageDirective implements OnInit, OnDestroy {
     private renderer: Renderer2
   ) { }
 
-  ngOnInit() {
+  ngAfterViewInit() {
     if (isPlatformBrowser(this.platformId)) {
       this.initFullpage();
     }
@@ -37,7 +38,6 @@ export class FullpageDirective implements OnInit, OnDestroy {
       const activeSection = this.fullpage_api.getActiveSection();
       const activeSlide = this.fullpage_api.getActiveSlide();
 
-      // bug destroy(all) also destroyed angular events such as (click)
       this.destroyFullpage();
 
       if (activeSection) {

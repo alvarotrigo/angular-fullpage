@@ -4,7 +4,7 @@
 Official Angular wrapper for the <a target="_blank" href="https://github.com/alvarotrigo/fullPage.js/">fullpage.js library</a>.
 </p>
 <p align="center">
-  <img src="https://img.shields.io/badge/angular--fullpage-v0.0.8-brightgreen.svg" alt="angular-fullpage version" />
+  <img src="https://img.shields.io/badge/angular--fullpage-v0.0.10-brightgreen.svg" alt="angular-fullpage version" />
 </p>
 
 - [Demo online](https://alvarotrigo.com/angular-fullpage/) | [Stackblitz](https://stackblitz.com/edit/angular-nqsqwk)
@@ -50,7 +50,7 @@ If you are creating an open source application under a license compatible with t
 
 ```typescript
 // app.module.ts
-import { AngularFullpageModule } from 'angular-fullpage';
+import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 
 @NgModule({
   imports: [
@@ -66,6 +66,11 @@ You should import the fullpage.js stylesheet on your `style.scss` or `component.
 ```scss
 /* styles.scss or app.component.scss */
 @import url(~fullpage.js/dist/fullpage.min.css);
+```
+
+```css
+/* standard css */
+@import '~fullpage.js/dist/fullpage.min.css';
 ```
 
 Then use the directive on your component:
@@ -110,13 +115,13 @@ Example of HTML:
 <!-- app.component.html -->
 <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
   <div class="section">Some section1</div>
-    <div class="section" (click)="fullpage_api.moveSectionDown()">Some section2</div>
-    <div class="section">
-        <div class="slide">Slide 2.1</div>
-        <div class="slide">Slide 2.2</div>
-        <div class="slide">Slide 2.3</div>
-    </div>
-    <div class="section" (click)="fullpage_api.moveTo('secondPage', 2)">Some section4</div>
+	<div class="section" (click)="fullpage_api.moveSectionDown()">Some section2</div>
+	<div class="section">
+		<div class="slide">Slide 2.1</div>
+		<div class="slide">Slide 2.2</div>
+		<div class="slide">Slide 2.3</div>
+	</div>
+	<div class="section" (click)="fullpage_api.moveTo('secondPage', 2)">Some section4</div>
 </div>
 ```
 
@@ -163,15 +168,22 @@ Same procedure than the [use of extensions](https://github.com/alvarotrigo/angul
 ## Dynamic Changes
 If you want to update fullPage.js with new changes in the DOM call the `build()` method after making those changes.
 
-An example can be seen on the [dynamic-changes example](https://github.com/alvarotrigo/angular-fullpage/blob/master/src/app/examples/dynamic-changes/dynamic-changes.component.ts#L46):
+An example can be seen on the [dynamic-changes example](https://github.com/alvarotrigo/angular-fullpage/blob/master/demo/app/examples/dynamic-changes/dynamic-changes.component.ts#L46):
 
 ```javacript
 this.renderer.appendChild(this.fp_directive.nativeElement, section);
 this.fullpage_api.build(); // <-- here
 ```
 
+With `*ngFor`
+```html
+<div *ngFor="let section of [1,2,3,4,5,6]" class="section">
+  <h1>Section {{section}}</h1>
+</div>
+```
+
 ## Examples
-You can check some examples on the [`src` folder](https://github.com/alvarotrigo/angular-fullpage/tree/master/src).
+You can check some examples on the [`demo` folder](https://github.com/alvarotrigo/angular-fullpage/tree/master/demo).
 
 ## Contributing
 

@@ -1,6 +1,6 @@
 {
   "name": "@fullpage/angular-fullpage",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Official Angular wrapper for fullPage.js",
   "author": "vh13294",
   "contributors": [
@@ -8,7 +8,7 @@
     "alvarotrigo"
   ],
   "license": "GPL-3.0",
-  "main": "dist/angular-fullpage",
+  "main": "dist/@fullpage/angular-fullpage",
   "files": [
     "dist"
   ],
@@ -16,7 +16,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build angular-fullpage",
+    "post-build": "cpx README.md dist/@fullpage/angular-fullpage",
+    "build": "ng build angular-fullpage && npm run post-build",
     "build:example": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -52,6 +53,7 @@
     "@types/jasminewd2": "^2.0.6",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.3.0",
+    "cpx": "^1.5.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~3.0.0",
