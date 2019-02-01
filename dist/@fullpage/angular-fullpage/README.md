@@ -4,7 +4,7 @@
 Official Angular wrapper for the <a target="_blank" href="https://github.com/alvarotrigo/fullPage.js/">fullpage.js library</a>.
 </p>
 <p align="center">
-  <img src="https://img.shields.io/badge/angular--fullpage-v0.0.9-brightgreen.svg" alt="angular-fullpage version" />
+  <img src="https://img.shields.io/badge/angular--fullpage-v0.0.10-brightgreen.svg" alt="angular-fullpage version" />
 </p>
 
 - [Demo online](https://alvarotrigo.com/angular-fullpage/) | [Stackblitz](https://stackblitz.com/edit/angular-nqsqwk)
@@ -175,7 +175,7 @@ this.renderer.appendChild(this.fp_directive.nativeElement, section);
 this.fullpage_api.build(); // <-- here
 ```
 
-With *ngFor
+With `*ngFor`
 ```html
 <div *ngFor="let section of [1,2,3,4,5,6]" class="section">
   <h1>Section {{section}}</h1>
