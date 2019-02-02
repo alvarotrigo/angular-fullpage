@@ -175,7 +175,7 @@ this.renderer.appendChild(this.fp_directive.nativeElement, section);
 this.fullpage_api.build(); // <-- here
 ```
 
-An example can be seen on the [dynamic-changes-with-ngFor example](https://github.com/alvarotrigo/angular-fullpage/blob/master/demo/app/examples/dynamic-ng-for/dynamic-ng-for.component.ts#L45):
+An example for *ngFor can be seen on the [dynamic-changes-with-ngFor example](https://github.com/alvarotrigo/angular-fullpage/blob/master/demo/app/examples/dynamic-ng-for/dynamic-ng-for.component.ts#L45):
 
 ```html
 <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">

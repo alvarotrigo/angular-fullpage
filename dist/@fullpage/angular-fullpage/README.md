@@ -175,10 +175,13 @@ this.renderer.appendChild(this.fp_directive.nativeElement, section);
 this.fullpage_api.build(); // <-- here
 ```
 
-With `*ngFor`
+An example for *ngFor can be seen on the [dynamic-changes-with-ngFor example](https://github.com/alvarotrigo/angular-fullpage/blob/master/demo/app/examples/dynamic-ng-for/dynamic-ng-for.component.ts#L45):
+
 ```html
-<div *ngFor="let section of [1,2,3,4,5,6]" class="section">
-  <h1>Section {{section}}</h1>
+<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
+    <div *ngFor="let section of sections" class="section">
+		  <h1>Section {{section}}</h1>
+	</div>
 </div>
 ```
 
