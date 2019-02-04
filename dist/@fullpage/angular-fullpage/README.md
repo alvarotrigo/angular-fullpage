@@ -36,7 +36,7 @@ This will install the Angular wrapper as well as [fullpage.js](https://github.co
 
 ### Non open source license
 
-If you want to use angular-fullpage to develop non open sourced sites, themes, projects, and applications, the Commercial license is the appropriate license. With this option, your source code is kept proprietary. Which means, you won't have to change your whole application source code to an open source license. [Purchase a Fullpage Commercial License]
+If you want to use angular-fullpage to develop non open sourced sites, themes, projects, and applications, the Commercial license is the appropriate license. With this option, your source code is kept proprietary. Which means, you won't have to change your whole application source code to an open source license. [Purchase a Fullpage Commercial License](https://alvarotrigo.com/fullPage/pricing/).
 
 ### Open source license
 
@@ -175,10 +175,13 @@ this.renderer.appendChild(this.fp_directive.nativeElement, section);
 this.fullpage_api.build(); // <-- here
 ```
 
-With `*ngFor`
+An example for *ngFor can be seen on the [dynamic-changes-with-ngFor example](https://github.com/alvarotrigo/angular-fullpage/blob/master/demo/app/examples/dynamic-ng-for/dynamic-ng-for.component.ts#L45):
+
 ```html
-<div *ngFor="let section of [1,2,3,4,5,6]" class="section">
-  <h1>Section {{section}}</h1>
+<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
+    <div *ngFor="let section of sections" class="section">
+		  <h1>Section {{section}}</h1>
+	</div>
 </div>
 ```
 
