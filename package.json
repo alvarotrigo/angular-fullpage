@@ -1,6 +1,6 @@
 {
   "name": "@fullpage/angular-fullpage",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Official Angular wrapper for fullPage.js",
   "author": "vh13294",
   "contributors": [
@@ -39,7 +39,7 @@
     "@angular/platform-browser-dynamic": "^6.1.10",
     "@angular/router": "^6.1.10",
     "core-js": "^2.5.4",
-    "fullpage.js": "^3.0.3",
+    "fullpage.js": "^3.0.5",
     "rxjs": "~6.2.0",
     "zone.js": "~0.8.26"
   },
