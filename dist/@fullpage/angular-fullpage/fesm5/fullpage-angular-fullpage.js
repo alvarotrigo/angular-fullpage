@@ -1,11 +1,15 @@
 import { Directive, Input, Output, EventEmitter, Renderer2, HostListener, PLATFORM_ID, Inject, NgModule } from '@angular/core';
 import { isPlatformBrowser, isPlatformServer } from '@angular/common';
-import fullpage from 'fullpage.js/dist/fullpage.extensions.min';
 
 /**
  * @fileoverview added by tsickle
  * @suppress {checkTypes,extraRequire,missingReturn,uselessCode} checked by tsc
  */
+/** @type {?} */
+var fullpage = null;
+if (!fullpage && typeof window !== 'undefined') {
+    fullpage = require('fullpage.js/dist/fullpage.extensions.min');
+}
 var FullpageDirective = /** @class */ (function () {
     function FullpageDirective(platformId, renderer) {
         this.platformId = platformId;
