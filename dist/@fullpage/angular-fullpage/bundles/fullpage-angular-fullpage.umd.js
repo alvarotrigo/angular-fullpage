@@ -1,15 +1,18 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common'), require('fullpage.js/dist/fullpage.extensions.min')) :
-    typeof define === 'function' && define.amd ? define('@fullpage/angular-fullpage', ['exports', '@angular/core', '@angular/common', 'fullpage.js/dist/fullpage.extensions.min'], factory) :
-    (factory((global.fullpage = global.fullpage || {}, global.fullpage['angular-fullpage'] = {}),global.ng.core,global.ng.common,global.fullpage.js));
-}(this, (function (exports,core,common,fullpage) { 'use strict';
-
-    fullpage = fullpage && fullpage.hasOwnProperty('default') ? fullpage['default'] : fullpage;
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common')) :
+    typeof define === 'function' && define.amd ? define('@fullpage/angular-fullpage', ['exports', '@angular/core', '@angular/common'], factory) :
+    (factory((global.fullpage = global.fullpage || {}, global.fullpage['angular-fullpage'] = {}),global.ng.core,global.ng.common));
+}(this, (function (exports,core,common) { 'use strict';
 
     /**
      * @fileoverview added by tsickle
      * @suppress {checkTypes,extraRequire,missingReturn,uselessCode} checked by tsc
      */
+    /** @type {?} */
+    var fullpage = null;
+    if (!fullpage && typeof window !== 'undefined') {
+        fullpage = require('fullpage.js/dist/fullpage.extensions.min');
+    }
     var FullpageDirective = /** @class */ (function () {
         function FullpageDirective(platformId, renderer) {
             this.platformId = platformId;
