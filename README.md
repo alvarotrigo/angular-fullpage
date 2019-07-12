@@ -4,7 +4,7 @@
 Official Angular wrapper for the <a target="_blank" href="https://github.com/alvarotrigo/fullPage.js/">fullpage.js library</a>.
 </p>
 <p align="center">
-  <img src="https://img.shields.io/badge/angular--fullpage-v0.0.12-brightgreen.svg" alt="angular-fullpage version" />
+  <img src="https://img.shields.io/badge/angular--fullpage-v0.0.13-brightgreen.svg" alt="angular-fullpage version" />
 </p>
 
 - [Demo online](https://alvarotrigo.com/angular-fullpage/) | [Stackblitz](https://stackblitz.com/edit/angular-nqsqwk)
