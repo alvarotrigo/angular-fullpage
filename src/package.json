@@ -13,9 +13,10 @@
     "url": "https://github.com/alvarotrigo/angular-fullpage"
   },
   "license": "GPL-3.0",
+  "private": false,
   "peerDependencies": {
-    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
-    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+    "@angular/common": ">=2.0.0",
+    "@angular/core": ">=2.0.0"
   },
   "dependencies": {
     "fullpage.js": "^3.0.7"
