@@ -109,6 +109,14 @@ export class AppComponent {
 
 ```
 
+You can optionally import types by
+
+```typescript
+import { options, fullpage_api } from 'fullpage.js/dist/fullpage.extensions.min';
+config: options;
+fullpage_api: fullpage_api;
+```
+
 Example of HTML:
 
 ```html
