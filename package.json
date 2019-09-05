@@ -7,12 +7,17 @@
     "vh13294",
     "alvarotrigo"
   ],
+  "homepage": "https://github.com/alvarotrigo/angular-fullpage",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alvarotrigo/angular-fullpage"
+  },
   "license": "GPL-3.0",
+  "private": false,
   "main": "dist/@fullpage/angular-fullpage",
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/alvarotrigo/angular-fullpage",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -23,11 +28,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/alvarotrigo/angular-fullpage"
-  },
-  "private": false,
   "dependencies": {
     "@angular/animations": "^6.1.10",
     "@angular/common": "^6.1.10",
