@@ -162,8 +162,8 @@
      */
 
     exports.AngularFullpageModule = AngularFullpageModule;
-    exports.ɵb = AnchorLinkDirective;
-    exports.ɵa = FullpageDirective;
+    exports.FullpageDirective = FullpageDirective;
+    exports.AnchorLinkDirective = AnchorLinkDirective;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 

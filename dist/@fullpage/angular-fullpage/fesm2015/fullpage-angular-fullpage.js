@@ -133,6 +133,6 @@ AngularFullpageModule.decorators = [
  * @suppress {checkTypes,extraRequire,missingReturn,uselessCode} checked by tsc
  */
 
-export { AngularFullpageModule, AnchorLinkDirective as ɵb, FullpageDirective as ɵa };
+export { AngularFullpageModule, FullpageDirective, AnchorLinkDirective };
 
 //# sourceMappingURL=fullpage-angular-fullpage.js.map
