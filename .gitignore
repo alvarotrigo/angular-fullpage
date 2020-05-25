@@ -3,6 +3,7 @@
 # compiled output
 /tmp
 /out-tsc
+/dist
 
 # dependencies
 /node_modules
@@ -17,6 +18,7 @@
 *.sublime-workspace
 
 # IDE - VSCode
+.history
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
