@@ -1,6 +1,6 @@
 {
   "name": "@fullpage/angular-fullpage",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Official Angular wrapper for fullPage.js",
   "author": "vh13294",
   "contributors": [
@@ -19,7 +19,7 @@
     "@angular/core": ">=2.0.0"
   },
   "dependencies": {
-    "fullpage.js": "^3.0.7",
+    "fullpage.js": "^3.1.0",
     "tslib": "^1.9.0"
   },
   "main": "bundles/fullpage-angular-fullpage.umd.js",
