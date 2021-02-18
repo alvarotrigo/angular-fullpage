@@ -1,18 +1,23 @@
 {
   "name": "@fullpage/angular-fullpage",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Official Angular wrapper for fullPage.js",
   "author": "vh13294",
   "contributors": [
     "vh13294",
     "alvarotrigo"
   ],
+  "homepage": "https://github.com/alvarotrigo/angular-fullpage",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alvarotrigo/angular-fullpage"
+  },
   "license": "GPL-3.0",
+  "private": false,
   "main": "dist/@fullpage/angular-fullpage",
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/alvarotrigo/angular-fullpage",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -23,11 +28,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/alvarotrigo/angular-fullpage"
-  },
-  "private": false,
   "dependencies": {
     "@angular/animations": "^6.1.10",
     "@angular/common": "^6.1.10",
@@ -39,7 +39,7 @@
     "@angular/platform-browser-dynamic": "^6.1.10",
     "@angular/router": "^6.1.10",
     "core-js": "^2.5.4",
-    "fullpage.js": "^3.0.7",
+    "fullpage.js": "^3.1.0",
     "rxjs": "~6.2.0",
     "zone.js": "~0.8.26"
   },
