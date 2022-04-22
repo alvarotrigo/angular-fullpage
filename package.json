@@ -39,7 +39,7 @@
     "@angular/platform-browser-dynamic": "^6.1.10",
     "@angular/router": "^6.1.10",
     "core-js": "^2.5.4",
-    "fullpage.js": "^3.1.1",
+    "fullpage.js": "^4.0.5",
     "node-sass": "^6.0.0",
     "rxjs": "~6.2.0",
     "zone.js": "~0.8.26"
