@@ -6,6 +6,7 @@
 
 # dependencies
 /node_modules
+/src/node_modules
 
 # IDEs and editors
 /.idea
@@ -13,6 +14,7 @@
 .classpath
 .c9/
 *.launch
+*.angular
 .settings/
 *.sublime-workspace
 .vscode/*
