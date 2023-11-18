@@ -1,6 +1,7 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
+    "typeRoots": ["src/angular-fullpage/lib/fullpage.interface.ts"],
     "outDir": "../out-tsc/lib",
     "target": "es2015",
     "module": "es2015",

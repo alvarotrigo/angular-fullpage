@@ -3,13 +3,6 @@ import { EventEmitter, PLATFORM_ID, Directive, Inject, Input, Output, HostListen
 import { isPlatformBrowser, isPlatformServer } from '@angular/common';
 
 // tslint:disable-next-line:max-line-length
-// declare var require;
-// let fullpage = null;
-// if (!fullpage && typeof window !== 'undefined') {
-//   fullpage = require('fullpage.js/dist/fullpage.extensions.min');
-// }
-// import { fullpage } from 'node_modules/fullpage.js/dist/fullpage.extensions.min';
-// import { fullpage } from 'fullpage.js/dist/fullpage.extensions.min';
 class FullpageDirective {
     platformId;
     renderer;
@@ -120,6 +113,7 @@ class AngularFullpageModule {
 /*
  * Public API Surface of angular-fullpage
  */
+/// <reference path="./lib/fullpage.interface.ts" />
 
 /**
  * Generated bundle index. Do not edit.
