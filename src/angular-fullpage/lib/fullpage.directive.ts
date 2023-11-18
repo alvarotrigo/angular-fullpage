@@ -2,11 +2,8 @@
 import { Directive, Input, AfterViewInit, OnDestroy, Output, EventEmitter, Renderer2, HostListener, PLATFORM_ID, Inject } from '@angular/core';
 import { isPlatformBrowser, isPlatformServer } from '@angular/common';
 
-declare var require;
-let fullpage = null;
-if (!fullpage && typeof window !== 'undefined') {
-  fullpage = require('fullpage.js/dist/fullpage.extensions.min');
-}
+
+declare let fullpage: any;
 
 @Directive({
   // tslint:disable-next-line:directive-selector
@@ -33,6 +30,7 @@ export class FullpageDirective implements AfterViewInit, OnDestroy {
   }
 
   initFullpage() {
+    console.log("fullpage", fullpage);
     this.fullpage_api = new fullpage('#' + this.id, this.options);
     this.addBuildFunction();
     this.ref.emit(this.fullpage_api);
