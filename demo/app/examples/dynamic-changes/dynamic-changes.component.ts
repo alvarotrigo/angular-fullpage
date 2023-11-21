@@ -8,7 +8,7 @@ import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/co
 export class DynamicChangesExampleComponent implements OnInit {
   @ViewChild('fullpageRef') fp_directive: ElementRef;
   config;
-  fullpage_api;
+  fullpageApi;
 
   constructor(private renderer: Renderer2) {
 
@@ -40,7 +40,7 @@ export class DynamicChangesExampleComponent implements OnInit {
   }
 
   getRef(fullPageRef) {
-    this.fullpage_api = fullPageRef;
+    this.fullpageApi = fullPageRef;
   }
 
   addSection() {
@@ -54,18 +54,18 @@ export class DynamicChangesExampleComponent implements OnInit {
     // adding section
     this.renderer.appendChild(this.fp_directive.nativeElement, section);
 
-    this.fullpage_api.build();
+    this.fullpageApi.build();
   }
 
   removeLast() {
     const lastSection = this.fp_directive.nativeElement.lastChild;
 
-    if (lastSection.isEqualNode(this.fullpage_api.getActiveSection().item)) {
-      this.fullpage_api.moveSectionUp();
+    if (lastSection.isEqualNode(this.fullpageApi.getActiveSection().item)) {
+      this.fullpageApi.moveSectionUp();
     }
     lastSection.remove();
 
-    this.fullpage_api.build();
+    this.fullpageApi.build();
   }
 
   randomColor() {

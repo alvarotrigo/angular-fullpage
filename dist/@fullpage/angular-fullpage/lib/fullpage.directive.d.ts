@@ -6,7 +6,7 @@ export declare class FullpageDirective implements AfterViewInit, OnDestroy {
     id: any;
     options: any;
     ref: EventEmitter<any>;
-    fullpage_api: any;
+    fullpageApi: any;
     constructor(platformId: Object, renderer: Renderer2);
     ngAfterViewInit(): void;
     initFullpage(): void;

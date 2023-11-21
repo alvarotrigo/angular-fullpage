@@ -49,7 +49,6 @@
               "demo/styles.scss"
             ],
             "scripts": [
-              "node_modules/fullpage.js/vendors/scrolloverflow.min.js",
               "node_modules/fullpage.js/dist/fullpage.extensions.min.js"
             ]
           },
@@ -143,7 +142,7 @@
       "prefix": "fp",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "src/tsconfig.lib.json",
             "project": "src/ng-package.json"
