@@ -1,11 +1,8 @@
 {
   "$schema": "../node_modules/ng-packagr/ng-package.schema.json",
-  "whitelistedNonPeerDependencies": ["fullpage.js"],
+  "allowedNonPeerDependencies": ["fullpage.js"],
   "dest": "../dist/@fullpage/angular-fullpage",
   "lib": {
-    "entryFile": "angular-fullpage/public_api.ts",
-    "umdModuleIds": {
-      "fullpage.js/dist/fullpage.extensions.min": "fullpage.js"
-    }
+    "entryFile": "angular-fullpage/public_api.ts"
   }
 }

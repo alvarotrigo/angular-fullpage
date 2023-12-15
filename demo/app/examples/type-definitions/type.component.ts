@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { options, fullpage_api } from 'fullpage.js/dist/fullpage.extensions.min';
+import { fullpageOptions, fullpageApi } from 'fullpage.js/dist/fullpage.extensions.min';
 
 @Component({
   selector: 'app-type',
@@ -7,8 +7,8 @@ import { options, fullpage_api } from 'fullpage.js/dist/fullpage.extensions.min'
   styleUrls: ['./type.component.scss']
 })
 export class TypeExampleComponent implements OnInit {
-  config: options;
-  fullpage_api: fullpage_api;
+  config: fullpageOptions;
+  fullpageApi: fullpageApi;
 
   constructor() {
 
@@ -19,6 +19,9 @@ export class TypeExampleComponent implements OnInit {
       menu: '#menu',
       scrollOverflow: true,
       sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+      credits: {
+        enabled: false,
+      },
 
       // events callback
       afterLoad: (origin, destination, direction) => {
@@ -40,7 +43,7 @@ export class TypeExampleComponent implements OnInit {
   }
 
   getRef(fullPageRef) {
-    this.fullpage_api = fullPageRef;
+    this.fullpageApi = fullPageRef;
   }
 
 }

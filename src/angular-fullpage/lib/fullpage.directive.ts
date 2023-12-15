@@ -2,11 +2,8 @@
 import { Directive, Input, AfterViewInit, OnDestroy, Output, EventEmitter, Renderer2, HostListener, PLATFORM_ID, Inject } from '@angular/core';
 import { isPlatformBrowser, isPlatformServer } from '@angular/common';
 
-declare var require;
-let fullpage = null;
-if (!fullpage && typeof window !== 'undefined') {
-  fullpage = require('fullpage.js/dist/fullpage.extensions.min');
-}
+
+declare let fullpage: any;
 
 @Directive({
   // tslint:disable-next-line:directive-selector
@@ -16,7 +13,7 @@ export class FullpageDirective implements AfterViewInit, OnDestroy {
   @Input() id;
   @Input() options;
   @Output() ref = new EventEmitter();
-  fullpage_api;
+  fullpageApi;
 
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,
@@ -33,15 +30,16 @@ export class FullpageDirective implements AfterViewInit, OnDestroy {
   }
 
   initFullpage() {
-    this.fullpage_api = new fullpage('#' + this.id, this.options);
+    console.log("fullpage", fullpage);
+    this.fullpageApi = new fullpage('#' + this.id, this.options);
     this.addBuildFunction();
-    this.ref.emit(this.fullpage_api);
+    this.ref.emit(this.fullpageApi);
   }
 
   addBuildFunction() {
-    this.fullpage_api.build = () => {
-      const activeSection = this.fullpage_api.getActiveSection();
-      const activeSlide = this.fullpage_api.getActiveSlide();
+    this.fullpageApi.build = () => {
+      const activeSection = this.fullpageApi.getActiveSection();
+      const activeSlide = this.fullpageApi.getActiveSlide();
 
       this.destroyFullpage();
 
@@ -58,8 +56,8 @@ export class FullpageDirective implements AfterViewInit, OnDestroy {
   }
 
   destroyFullpage() {
-    if (typeof this.fullpage_api !== 'undefined' && typeof this.fullpage_api.destroy !== 'undefined') {
-      this.fullpage_api.destroy('all');
+    if (typeof this.fullpageApi !== 'undefined' && typeof this.fullpageApi.destroy !== 'undefined') {
+      this.fullpageApi.destroy('all');
     }
   }
 
