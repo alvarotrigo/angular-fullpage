@@ -6,7 +6,7 @@ Official Angular wrapper for the <a target="_blank" href="https://github.com/alv
 <p align="center">
 
   [![npm version][npm-version-src]][npm-version-href]
-  
+
 </p>
 
 - [Demo online](https://alvarotrigo.com/angular-fullpage/) | [Stackblitz](https://stackblitz.com/edit/angular-nqsqwk)
@@ -213,3 +213,7 @@ Found an issue? Have an idea? Check out the [Contributing](https://github.com/al
 - [fullPage.js documentation](https://github.com/alvarotrigo/fullPage.js)
 
 
+
+<!-- Badges -->
+[npm-version-src]: https://img.shields.io/npm/v/angular-fullpage.js/latest.svg
+[npm-version-href]: https://www.npmjs.com/package/@fullpage/angular-fullpage
