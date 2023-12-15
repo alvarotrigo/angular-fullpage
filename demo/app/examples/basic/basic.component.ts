@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasicExampleComponent implements OnInit {
   config;
-  fullpage_api;
+  fullpageApi;
 
   constructor() {
 
@@ -24,7 +24,7 @@ export class BasicExampleComponent implements OnInit {
   }
 
   getRef(fullPageRef) {
-    this.fullpage_api = fullPageRef;
+    this.fullpageApi = fullPageRef;
   }
 
 }

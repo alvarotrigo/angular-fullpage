@@ -1,9 +1,10 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
+    "typeRoots": ["src/angular-fullpage/lib/fullpage.interface.ts"],
     "outDir": "../out-tsc/lib",
-    "target": "es2015",
-    "module": "es2015",
+    "target": "ES2022",
+    "module": "ES2022",
     "moduleResolution": "node",
     "declaration": true,
     "sourceMap": true,
@@ -14,7 +15,7 @@
     "types": [],
     "lib": [
       "dom",
-      "es2015"
+      "ES2022"
     ]
   },
   "angularCompilerOptions": {
@@ -23,7 +24,9 @@
     "strictMetadataEmit": true,
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true,
-    "enableResourceInlining": true
+    "enableResourceInlining": true,
+    "compilationMode": "partial",
+    "enableIvy": true
   },
   "exclude": [
     "src/test.ts",
