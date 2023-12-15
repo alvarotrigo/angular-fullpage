@@ -121,7 +121,7 @@ Example of HTML:
 
 ```html
 <!-- app.component.html -->
-<div fullpage id="fullpage" [fullpageOptions]="config" (ref)="getRef($event)">
+<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
   <div class="section">Some section1</div>
 	<div class="section" (click)="fullpageApi.moveSectionDown()">Some section2</div>
 	<div class="section">
