@@ -2,7 +2,6 @@
 import { Directive, Input, AfterViewInit, OnDestroy, Output, EventEmitter, Renderer2, HostListener, PLATFORM_ID, Inject } from '@angular/core';
 import { isPlatformBrowser, isPlatformServer } from '@angular/common';
 
-
 declare let fullpage: any;
 
 @Directive({
