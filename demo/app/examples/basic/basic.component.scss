@@ -2,3 +2,25 @@
   text-align:center;
   font-size: 3em;
 }
+.examples{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 999;
+}
+.examples li{
+  display: inline-block;
+}
+.examples li a{
+  color: white;
+  text-decoration: none;
+  font-family: arial;
+  font-size: 0.5em;
+  margin-right: 2em;
+}
+.examples li a:hover{
+  text-decoration: underline;
+}
