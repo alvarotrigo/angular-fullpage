@@ -5,6 +5,7 @@ import { DynamicChangesExampleComponent } from './examples/dynamic-changes/dynam
 import { ScrollOverflowExampleComponent } from './examples/scrolloverflow/scrolloverflow.component';
 import { TypeExampleComponent } from './examples/type-definitions/type.component';
 import { DynamicNgForComponent } from './examples/dynamic-ng-for/dynamic-ng-for.component';
+import { UsingDirectiveComponent } from './examples/using-directive/using-directive';
 
 
 const routes: Routes = [
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'dynamicChanges', component: DynamicChangesExampleComponent },
   { path: 'scrollOverflow', component: ScrollOverflowExampleComponent },
   { path: 'typeDefinitions', component: TypeExampleComponent },
-  { path: 'dynamicNgFor', component: DynamicNgForComponent }
+  { path: 'dynamicNgFor', component: DynamicNgForComponent },
+  { path: 'usingDirective', component: UsingDirectiveComponent }
 ];
 
 @NgModule({
