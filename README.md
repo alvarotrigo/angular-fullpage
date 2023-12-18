@@ -215,5 +215,5 @@ Found an issue? Have an idea? Check out the [Contributing](https://github.com/al
 
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/angular-fullpage.js/latest.svg
+[npm-version-src]: https://img.shields.io/npm/v/@fullpage/angular-fullpage/latest.svg
 [npm-version-href]: https://www.npmjs.com/package/@fullpage/angular-fullpage
