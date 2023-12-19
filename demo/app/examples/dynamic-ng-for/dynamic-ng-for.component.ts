@@ -8,7 +8,7 @@ import { Component, OnInit, AfterViewInit, ViewChildren, QueryList } from '@angu
 export class DynamicNgForComponent implements OnInit, AfterViewInit {
   @ViewChildren('sectionRef') sectionRef: QueryList<any>;
   config: any;
-  fullpage_api: any;
+  fullpageApi: any;
   sections = [1];
 
   constructor() {
@@ -32,7 +32,7 @@ export class DynamicNgForComponent implements OnInit, AfterViewInit {
   }
 
   getRef(fullPageRef) {
-    this.fullpage_api = fullPageRef;
+    this.fullpageApi = fullPageRef;
   }
 
   add() {
@@ -42,7 +42,7 @@ export class DynamicNgForComponent implements OnInit, AfterViewInit {
 
   ngForRendred() {
     console.log('ngFor dom render is done');
-    this.fullpage_api.build();
+    this.fullpageApi.build();
   }
 
 }

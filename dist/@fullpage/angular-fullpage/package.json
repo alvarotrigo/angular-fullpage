@@ -15,11 +15,11 @@
   "license": "GPL-3.0",
   "private": false,
   "peerDependencies": {
-    "@angular/common": "16.0.0",
-    "@angular/core": "16.0.0"
+    "@angular/common": ">12",
+    "@angular/core": ">12"
   },
   "dependencies": {
-    "fullpage.js": "3.1.1",
+    "fullpage.js": "4.0.20",
     "tslib": "^2.3.0"
   },
   "module": "fesm2022/fullpage-angular-fullpage.mjs",
@@ -35,8 +35,5 @@
       "default": "./fesm2022/fullpage-angular-fullpage.mjs"
     }
   },
-  "sideEffects": false,
-  "scripts": {
-    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
-  }
+  "sideEffects": false
 }

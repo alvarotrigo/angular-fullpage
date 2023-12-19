@@ -11,6 +11,7 @@ import { DynamicNgForComponent } from './examples/dynamic-ng-for/dynamic-ng-for.
 
 // added
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
+import { UsingDirectiveComponent } from './examples/using-directive/using-directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AngularFullpageModule } from '@fullpage/angular-fullpage';
     DynamicChangesExampleComponent,
     ScrollOverflowExampleComponent,
     TypeExampleComponent,
-    DynamicNgForComponent
+    DynamicNgForComponent,
+    UsingDirectiveComponent
   ],
   imports: [
     BrowserModule,

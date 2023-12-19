@@ -4,7 +4,9 @@
 Official Angular wrapper for the <a target="_blank" href="https://github.com/alvarotrigo/fullPage.js/">fullpage.js library</a>.
 </p>
 <p align="center">
-  <img src="https://img.shields.io/badge/angular--fullpage-v0.0.16-brightgreen.svg" alt="angular-fullpage version" />
+
+  [![npm version][npm-version-src]][npm-version-href]
+
 </p>
 
 - [Demo online](https://alvarotrigo.com/angular-fullpage/) | [Stackblitz](https://stackblitz.com/edit/angular-nqsqwk)
@@ -79,7 +81,7 @@ Then use the directive on your component:
 // app.component.ts
 export class AppComponent {
   config: any;
-  fullpage_api: any;
+  fullpageApi: any;
 
   constructor() {
 
@@ -102,7 +104,7 @@ export class AppComponent {
   }
 
   getRef(fullPageRef) {
-    this.fullpage_api = fullPageRef;
+    this.fullpageApi = fullPageRef;
   }
 
 }
@@ -112,9 +114,9 @@ export class AppComponent {
 You can optionally import types by
 
 ```typescript
-import { options, fullpage_api } from 'fullpage.js/dist/fullpage.extensions.min';
-config: options;
-fullpage_api: fullpage_api;
+import { fullpageOptions, fullpageApi } from 'fullpage.js/dist/fullpage.extensions.min';
+config: fullpageOptions;
+fullpageApi: fullpageApi;
 ```
 
 Example of HTML:
@@ -123,13 +125,13 @@ Example of HTML:
 <!-- app.component.html -->
 <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
   <div class="section">Some section1</div>
-	<div class="section" (click)="fullpage_api.moveSectionDown()">Some section2</div>
+	<div class="section" (click)="fullpageApi.moveSectionDown()">Some section2</div>
 	<div class="section">
 		<div class="slide">Slide 2.1</div>
 		<div class="slide">Slide 2.2</div>
 		<div class="slide">Slide 2.3</div>
 	</div>
-	<div class="section" (click)="fullpage_api.moveTo('secondPage', 2)">Some section4</div>
+	<div class="section" (click)="fullpageApi.moveTo('secondPage', 2)">Some section4</div>
 </div>
 ```
 
@@ -180,7 +182,7 @@ An example can be seen on the [dynamic-changes example](https://github.com/alvar
 
 ```javacript
 this.renderer.appendChild(this.fp_directive.nativeElement, section);
-this.fullpage_api.build(); // <-- here
+this.fullpageApi.build(); // <-- here
 ```
 
 An example for *ngFor can be seen on the [dynamic-changes-with-ngFor example](https://github.com/alvarotrigo/angular-fullpage/blob/master/demo/app/examples/dynamic-ng-for/dynamic-ng-for.component.ts#L45):
@@ -211,3 +213,7 @@ Found an issue? Have an idea? Check out the [Contributing](https://github.com/al
 - [fullPage.js documentation](https://github.com/alvarotrigo/fullPage.js)
 
 
+
+<!-- Badges -->
+[npm-version-src]: https://img.shields.io/npm/v/@fullpage/angular-fullpage/latest.svg
+[npm-version-href]: https://www.npmjs.com/package/@fullpage/angular-fullpage
