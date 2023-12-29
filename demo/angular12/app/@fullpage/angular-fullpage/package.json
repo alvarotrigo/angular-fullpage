@@ -1,0 +1,33 @@
+{
+  "name": "@fullpage/angular-fullpage",
+  "version": "0.0.16",
+  "description": "Official Angular wrapper for fullPage.js",
+  "author": "vh13294",
+  "contributors": [
+    "vh13294",
+    "alvarotrigo",
+    "alidihaw"
+  ],
+  "homepage": "https://github.com/alvarotrigo/angular-fullpage",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alvarotrigo/angular-fullpage"
+  },
+  "license": "GPL-3.0",
+  "private": false,
+  "peerDependencies": {
+    "@angular/common": ">12.0.0",
+    "@angular/core": ">12.0.0"
+  },
+  "dependencies": {
+    "fullpage.js": "4.0.20",
+    "tslib": "^2.1.0"
+  },
+  "main": "bundles/fullpage-angular-fullpage.umd.js",
+  "module": "fesm2015/fullpage-angular-fullpage.js",
+  "es2015": "fesm2015/fullpage-angular-fullpage.js",
+  "esm2015": "esm2015/fullpage-angular-fullpage.js",
+  "fesm2015": "fesm2015/fullpage-angular-fullpage.js",
+  "typings": "fullpage-angular-fullpage.d.ts",
+  "sideEffects": false
+}
