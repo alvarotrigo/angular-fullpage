@@ -5,7 +5,8 @@
   "author": "vh13294",
   "contributors": [
     "vh13294",
-    "alvarotrigo"
+    "alvarotrigo",
+    "alidihaw"
   ],
   "homepage": "https://github.com/alvarotrigo/angular-fullpage",
   "repository": {
@@ -15,8 +16,8 @@
   "license": "GPL-3.0",
   "private": false,
   "peerDependencies": {
-    "@angular/common": ">12",
-    "@angular/core": ">12"
+    "@angular/common": ">12.0.0",
+    "@angular/core": ">12.0.0"
   },
   "dependencies": {
     "fullpage.js": "4.0.20"
