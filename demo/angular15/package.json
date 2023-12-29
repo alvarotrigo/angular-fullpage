@@ -36,7 +36,7 @@
     "@angular/platform-browser": "15.0.0",
     "@angular/platform-browser-dynamic": "15.0.0",
     "@angular/router": "15.0.0",
-    "fullpage.js": "4.0.21",
+    "fullpage.js": "4.0.22",
     "rxjs": "~6.6.0",
     "zone.js": "~0.12.0"
   },
