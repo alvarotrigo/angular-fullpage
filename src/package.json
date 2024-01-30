@@ -19,6 +19,6 @@
     "@angular/core": ">12"
   },
   "dependencies": {
-    "fullpage.js": "4.0.20"
+    "fullpage.js": "4.0.21"
   }
 }
