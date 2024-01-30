@@ -19,7 +19,7 @@
     "@angular/core": ">12"
   },
   "dependencies": {
-    "fullpage.js": "4.0.20",
+    "fullpage.js": "4.0.21",
     "tslib": "^2.3.0"
   },
   "module": "fesm2022/fullpage-angular-fullpage.mjs",
