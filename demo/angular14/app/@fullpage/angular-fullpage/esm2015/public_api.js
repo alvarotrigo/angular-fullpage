@@ -1,0 +1,7 @@
+/*
+ * Public API Surface of angular-fullpage
+ */
+/// <reference path="./lib/fullpage.interface.ts" />
+export * from './lib/angular-fullpage.module';
+export * from './lib/fullpage.directive';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljX2FwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uL3NyYy9hbmd1bGFyLWZ1bGxwYWdlL3B1YmxpY19hcGkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0dBRUc7QUFFSCxvREFBb0Q7QUFFcEQsY0FBYywrQkFBK0IsQ0FBQztBQUM5QyxjQUFjLDBCQUEwQixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLypcbiAqIFB1YmxpYyBBUEkgU3VyZmFjZSBvZiBhbmd1bGFyLWZ1bGxwYWdlXG4gKi9cblxuLy8vIDxyZWZlcmVuY2UgcGF0aD1cIi4vbGliL2Z1bGxwYWdlLmludGVyZmFjZS50c1wiIC8+XG5cbmV4cG9ydCAqIGZyb20gJy4vbGliL2FuZ3VsYXItZnVsbHBhZ2UubW9kdWxlJztcbmV4cG9ydCAqIGZyb20gJy4vbGliL2Z1bGxwYWdlLmRpcmVjdGl2ZSc7XG4iXX0=

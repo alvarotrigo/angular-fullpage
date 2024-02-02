@@ -1,12 +1,10 @@
-// tslint:disable-next-line:max-line-length
 import { Directive, Input, AfterViewInit, OnDestroy, Output, EventEmitter, Renderer2, HostListener, PLATFORM_ID, Inject } from '@angular/core';
 import { isPlatformBrowser, isPlatformServer } from '@angular/common';
 
 declare let fullpage: any;
 
 @Directive({
-  // tslint:disable-next-line:directive-selector
-  selector: '[fullpage]'
+  selector: '[fullpage]',
 })
 export class FullpageDirective implements AfterViewInit, OnDestroy {
   @Input() id;
@@ -66,7 +64,6 @@ export class FullpageDirective implements AfterViewInit, OnDestroy {
 }
 
 @Directive({
-  // tslint:disable-next-line:directive-selector
   selector : '[href]'
 })
 export class AnchorLinkDirective {

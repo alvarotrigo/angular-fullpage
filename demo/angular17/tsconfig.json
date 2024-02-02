@@ -1,0 +1,29 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "module": "es2022",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2022",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2022",
+      "dom"
+    ],
+    "paths": {
+      "@fullpage": [
+        "../../dist/@fullpage"
+      ],
+      "@fullpage/*": [
+        "../../dist/@fullpage/*"
+      ]
+    }
+  }
+}

@@ -8,6 +8,8 @@
 /node_modules
 /src/node_modules
 
+/dist/demo/*
+
 # IDEs and editors
 /.idea
 .project

@@ -5,25 +5,17 @@
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
-    "module": "esnext",
+    "module": "ES2015",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "ES2022",
+    "target": "ES2015",
     "typeRoots": [
       "node_modules/@types"
     ],
     "lib": [
-      "es2017",
+      "ES2015",
       "dom"
-    ],
-    "paths": {
-      "@fullpage": [
-        "dist/@fullpage"
-      ],
-      "@fullpage/*": [
-        "dist/@fullpage/*"
-      ]
-    }
+    ]
   }
 }

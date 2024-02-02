@@ -3,138 +3,6 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "fullpage": {
-      "root": "",
-      "sourceRoot": "demo",
-      "projectType": "application",
-      "prefix": "app",
-      "schematics": {
-        "@schematics/angular:component": {
-          "skipTests": true
-        },
-        "@schematics/angular:class": {
-          "skipTests": true
-        },
-        "@schematics/angular:directive": {
-          "skipTests": true
-        },
-        "@schematics/angular:guard": {
-          "skipTests": true
-        },
-        "@schematics/angular:module": {
-          "skipTests": true
-        },
-        "@schematics/angular:pipe": {
-          "skipTests": true
-        },
-        "@schematics/angular:service": {
-          "skipTests": true
-        }
-      },
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:browser",
-          "options": {
-            "aot": true,
-            "outputPath": "dist/demo",
-            "index": "demo/index.html",
-            "main": "demo/main.ts",
-            "polyfills": "demo/polyfills.ts",
-            "tsConfig": "demo/tsconfig.app.json",
-            "assets": [
-              "demo/favicon.ico",
-              "demo/assets"
-            ],
-            "styles": [
-              "demo/styles.scss"
-            ],
-            "scripts": [
-              "node_modules/fullpage.js/dist/fullpage.extensions.min.js"
-            ]
-          },
-          "configurations": {
-            "production": {
-              "budgets": [
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb"
-                }
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "demo/environments/environment.ts",
-                  "with": "demo/environments/environment.prod.ts"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "namedChunks": false,
-              "aot": true,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true
-            }
-          }
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "fullpage:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "fullpage:build:production"
-            }
-          }
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "fullpage:build"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "demo/tsconfig.app.json",
-              "demo/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
-    "fullpage-e2e": {
-      "root": "e2e/",
-      "projectType": "application",
-      "architect": {
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "fullpage:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "fullpage:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": "e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
     "angular-fullpage": {
       "root": "src",
       "sourceRoot": "src/angular-fullpage",
@@ -152,8 +20,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "src/tsconfig.lib.json",
-              "src/tsconfig.spec.json"
+              "src/tsconfig.lib.json"
             ],
             "exclude": [
               "**/node_modules/**"
