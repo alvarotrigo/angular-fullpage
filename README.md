@@ -4,9 +4,9 @@
 Official Angular wrapper for the <a target="_blank" href="https://github.com/alvarotrigo/fullPage.js/">fullpage.js library</a>.
 </p>
 <p align="center">
-
-  [![npm version][npm-version-src]][npm-version-href]
-
+  <a href="https://www.npmjs.com/package/@fullpage/angular-fullpage">
+    <img src="https://img.shields.io/npm/v/@fullpage/angular-fullpage/latest.svg" alt="angular-fullpage version" />
+  </a>
 </p>
 
 - [Demo online](https://alvarotrigo.com/angular-fullpage/) | [Stackblitz](https://stackblitz.com/edit/angular-nqsqwk)
@@ -211,9 +211,3 @@ Found an issue? Have an idea? Check out the [Contributing](https://github.com/al
 - [fullPage.js jsDelivr CDN](http://www.jsdelivr.com/#!jquery.fullpage)
 - [fullPage.js cdnJS CDN](https://cdnjs.com/libraries/fullPage.js)
 - [fullPage.js documentation](https://github.com/alvarotrigo/fullPage.js)
-
-
-
-<!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/@fullpage/angular-fullpage/latest.svg
-[npm-version-href]: https://www.npmjs.com/package/@fullpage/angular-fullpage
