@@ -1,0 +1,54 @@
+{
+  "name": "@fullpage/angular-fullpage-demo-angular18",
+  "version": "0.0.1",
+  "description": "Official Angular wrapper for fullPage.js",
+  "author": "vh13294",
+  "contributors": [
+    "vh13294",
+    "alvarotrigo",
+    "alidihaw"
+  ],
+  "homepage": "https://github.com/alvarotrigo/angular-fullpage",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alvarotrigo/angular-fullpage"
+  },
+  "license": "GPL-3.0",
+  "private": false,
+  "main": "dist/@fullpage/angular-fullpage",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "dependencies": {
+    "@angular/animations": "18.0.0",
+    "@angular/common": "18.0.0",
+    "@angular/compiler": "18.0.0",
+    "@angular/core": "18.0.0",
+    "@angular/forms": "18.0.0",
+    "@angular/platform-browser": "18.0.0",
+    "@angular/platform-browser-dynamic": "18.0.0",
+    "@angular/router": "18.0.0",
+    "fullpage.js": "4.0.35",
+    "rxjs": "~7.8.0",
+    "zone.js": "~0.14.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "18.0.0",
+    "@angular/cli": "18.0.0",
+    "@angular/compiler-cli": "18.0.0",
+    "@types/node": "^20.0.0",
+    "codelyzer": "~6.0.2",
+    "ts-node": "~10.9.0",
+    "tslib": "^2.4.0",
+    "tslint": "~6.1.0",
+    "typescript": "5.4"
+  }
+} 
