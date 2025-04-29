@@ -1,0 +1,30 @@
+<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">First section</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+	<li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
+	<li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
+</ul>
+
+<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)" #fullpageRef>
+    <div class="section"><h1>Section 1</h1></div>
+	<div class="section">
+		<h1>Section 2</h1>
+		<button (click)="addSection()">Add sections and change color</button>
+		<button (click)="fullpageApi.moveSectionDown()">Move down</button>
+		<button (click)="removeLast()">Remove last</button>
+	</div>
+	<div class="section">
+		<div class="slide"><h1>Slide 3.1</h1> </div>
+		<div class="slide"><h1>Slide 3.2</h1></div>
+		<div class="slide">
+			<h1>Slide 3.3</h1>
+			<a routerLink="secondTest">name</a>
+		</div>
+	</div>
+	<div class="section">
+		<h1>Section 4</h1>
+		<button (click)="addSection()">Add sections and change color</button>
+		<button (click)="fullpageApi.moveTo('secondPage', 2)">Move to second page</button>
+		<button (click)="removeLast()">Remove last</button>
+	</div>
+</div>
