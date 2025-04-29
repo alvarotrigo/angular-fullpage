@@ -1,11 +1,12 @@
 {
   "name": "@fullpage/angular-fullpage",
-  "version": "0.1.4",
+  "version": "0.1.3",
   "description": "Official Angular wrapper for fullPage.js",
   "author": "vh13294",
   "contributors": [
     "vh13294",
-    "alvarotrigo"
+    "alvarotrigo",
+    "alidihaw"
   ],
   "homepage": "https://github.com/alvarotrigo/angular-fullpage",
   "repository": {
@@ -23,36 +24,20 @@
     "start": "ng serve",
     "post-build": "cpx README.md dist/@fullpage/angular-fullpage",
     "build": "ng build angular-fullpage && npm run post-build",
-    "build:example": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "lint": "ng lint"
   },
   "dependencies": {
-    "@angular/animations": "16.0.0",
-    "@angular/common": "16.0.0",
-    "@angular/compiler": "16.0.0",
-    "@angular/core": "16.0.0",
-    "@angular/forms": "16.0.0",
-    "@angular/platform-browser": "16.0.0",
-    "@angular/platform-browser-dynamic": "16.0.0",
-    "@angular/router": "16.0.0",
-    "fullpage.js": "4.0.28",
-    "rxjs": "~6.6.0",
-    "zone.js": "~0.13.0"
+    "@angular-devkit/build-angular": "12.0.0",
+    "@angular/common": "12.0.0",
+    "@angular/core": "12.0.0",
+    "@angular/cli": "12.0.0",
+    "@angular/compiler": "12.0.0",
+    "@angular/compiler-cli": "12.0.0",
+    "fullpage.js": "4.0.35"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "16.0.0",
-    "@angular/cli": "16.0.0",
-    "@angular/compiler-cli": "16.0.0",
-    "@angular/language-service": "16.0.0",
-    "@types/node": "^12.11.1",
-    "codelyzer": "~6.0.2",
-    "cpx": "^1.5.0",
-    "ng-packagr": "^16.0.0",
+    "ng-packagr": "^12.0.0",
     "ts-node": "~8.0.0",
-    "tslib": "^2.4.0",
-    "tslint": "~5.11.0",
-    "typescript": "5.0.2"
+    "typescript": "4.2.3"
   }
 }

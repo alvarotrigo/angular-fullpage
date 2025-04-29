@@ -1,0 +1,54 @@
+{
+  "name": "@fullpage/angular-fullpage-demo-angular16",
+  "version": "0.0.1",
+  "description": "Official Angular wrapper for fullPage.js",
+  "author": "vh13294",
+  "contributors": [
+    "vh13294",
+    "alvarotrigo",
+    "alidihaw"
+  ],
+  "homepage": "https://github.com/alvarotrigo/angular-fullpage",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alvarotrigo/angular-fullpage"
+  },
+  "license": "GPL-3.0",
+  "private": false,
+  "main": "dist/@fullpage/angular-fullpage",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "dependencies": {
+    "@angular/animations": "17.0.0",
+    "@angular/common": "17.0.0",
+    "@angular/compiler": "17.0.0",
+    "@angular/core": "17.0.0",
+    "@angular/forms": "17.0.0",
+    "@angular/platform-browser": "17.0.0",
+    "@angular/platform-browser-dynamic": "17.0.0",
+    "@angular/router": "17.0.0",
+    "fullpage.js": "4.0.35",
+    "rxjs": "~6.6.0",
+    "zone.js": "~0.14.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "17.0.0",
+    "@angular/cli": "17.0.0",
+    "@angular/compiler-cli": "17.0.0",
+    "@types/node": "^12.11.1",
+    "codelyzer": "~6.0.2",
+    "ts-node": "~8.0.0",
+    "tslib": "^2.4.0",
+    "tslint": "~5.11.0",
+    "typescript": "5.2"
+  }
+}
