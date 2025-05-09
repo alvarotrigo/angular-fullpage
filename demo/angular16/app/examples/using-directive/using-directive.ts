@@ -1,5 +1,5 @@
-import { AfterViewInit, Component, OnInit, ViewChild, ViewChildren } from '@angular/core';
-import { FullpageDirective } from 'app/@fullpage/angular-fullpage';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { FullpageDirective } from '@fullpage/angular-fullpage';
 import { fullpageOptions } from 'fullpage.js/dist/fullpage.extensions.min';
 
 

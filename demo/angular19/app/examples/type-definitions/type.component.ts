@@ -3,6 +3,7 @@ import { fullpageOptions, fullpageApi } from 'fullpage.js/dist/fullpage.extensio
 
 @Component({
   selector: 'app-type',
+  standalone: false,
   templateUrl: './type.component.html',
   styleUrls: ['./type.component.scss']
 })

@@ -36,19 +36,20 @@
     "@angular/platform-browser": "18.0.0",
     "@angular/platform-browser-dynamic": "18.0.0",
     "@angular/router": "18.0.0",
+    "@fullpage/angular-fullpage": "^0.1.6",
     "fullpage.js": "4.0.35",
     "rxjs": "~7.8.0",
     "zone.js": "~0.14.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "18.0.0",
+    "@angular-devkit/build-angular": "^18.2.19",
     "@angular/cli": "18.0.0",
     "@angular/compiler-cli": "18.0.0",
     "@types/node": "^20.0.0",
-    "codelyzer": "~6.0.2",
+    "codelyzer": "^0.0.28",
     "ts-node": "~10.9.0",
     "tslib": "^2.4.0",
     "tslint": "~6.1.0",
     "typescript": "5.4"
   }
-} 
+}

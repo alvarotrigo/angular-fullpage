@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular16-fullpage": {
+    "angular17-fullpage": {
       "root": "",
       "sourceRoot": "demo",
       "projectType": "application",
@@ -14,7 +14,7 @@
           "options": {
             "preserveSymlinks": true,
             "aot": true,
-            "outputPath": "../../dist/demo/angular16",
+            "outputPath": "../../dist/demo/angular17",
             "index": "./index.html",
             "main": "./main.ts",
             "polyfills": ["zone.js"],
@@ -72,14 +72,14 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular16-fullpage:build"
+            "buildTarget": "angular17-fullpage:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular16-fullpage:build:production"
+              "buildTarget": "angular17-fullpage:build:production"
             },
             "dev": {
-              "browserTarget": "angular16-fullpage:build:dev"
+              "buildTarget": "angular17-fullpage:build:dev"
             }
           },
           "defaultConfiguration": "dev"
@@ -87,7 +87,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular16-fullpage:build"
+            "buildTarget": "angular17-fullpage:build"
           }
         },
         "lint": {
@@ -103,5 +103,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
