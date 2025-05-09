@@ -10,8 +10,7 @@ import { ScrollOverflowExampleComponent } from './examples/scrolloverflow/scroll
 import { TypeExampleComponent } from './examples/type-definitions/type.component';
 import { DynamicNgForComponent } from './examples/dynamic-ng-for/dynamic-ng-for.component';
 import { UsingDirectiveComponent } from './examples/using-directive/using-directive';
-
-import { AngularFullpageModule } from './@fullpage/angular-fullpage';
+import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 
 @NgModule({
   declarations: [

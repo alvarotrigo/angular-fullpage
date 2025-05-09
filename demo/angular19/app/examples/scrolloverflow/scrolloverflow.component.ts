@@ -2,6 +2,7 @@ import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-scrolloverflow',
+  standalone: false,
   templateUrl: './scrolloverflow.component.html',
   styleUrls: ['./scrolloverflow.component.scss']
 })

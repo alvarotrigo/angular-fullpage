@@ -1,5 +1,5 @@
-import { AfterViewInit, Component, OnInit, ViewChild, ViewChildren } from '@angular/core';
-import { FullpageDirective } from 'app/@fullpage/angular-fullpage';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { ɵa as FullpageDirective} from '@fullpage/angular-fullpage';
 import { fullpageOptions } from 'fullpage.js/dist/fullpage.extensions.min';
 
 
@@ -30,7 +30,7 @@ export class UsingDirectiveComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.fullpageApi = this.fullpageDirective.fullpageApi;
+    this.fullpageApi = this.fullpageDirective.fullpage_api;
   }
 
   ngOnInit() {

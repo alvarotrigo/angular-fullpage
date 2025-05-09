@@ -2,6 +2,7 @@ import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/co
 
 @Component({
   selector: 'app-dynamic-changes',
+  standalone: false,
   templateUrl: './dynamic-changes.component.html',
   styleUrls: ['./dynamic-changes.component.scss']
 })
