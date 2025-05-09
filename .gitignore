@@ -22,6 +22,7 @@
 .vscode/*
 
 # IDE - VSCode
+/.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -37,6 +38,7 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+/.history
 
 # System Files
 .DS_Store

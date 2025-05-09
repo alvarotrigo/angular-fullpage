@@ -1,5 +1,5 @@
 {
-  "name": "@fullpage/angular-fullpage-demo-angular16",
+  "name": "@fullpage/angular-fullpage-demo-angular17",
   "version": "0.0.1",
   "description": "Official Angular wrapper for fullPage.js",
   "author": "vh13294",
@@ -24,6 +24,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
+    "postinstall": "ngcc",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -36,16 +37,17 @@
     "@angular/platform-browser": "17.0.0",
     "@angular/platform-browser-dynamic": "17.0.0",
     "@angular/router": "17.0.0",
+    "@fullpage/angular-fullpage": "^0.1.6",
     "fullpage.js": "4.0.35",
     "rxjs": "~6.6.0",
     "zone.js": "~0.14.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "17.0.0",
+    "@angular-devkit/build-angular": "^17.3.17",
     "@angular/cli": "17.0.0",
     "@angular/compiler-cli": "17.0.0",
     "@types/node": "^12.11.1",
-    "codelyzer": "~6.0.2",
+    "codelyzer": "^0.0.28",
     "ts-node": "~8.0.0",
     "tslib": "^2.4.0",
     "tslint": "~5.11.0",

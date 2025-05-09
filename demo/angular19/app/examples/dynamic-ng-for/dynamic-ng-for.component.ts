@@ -2,6 +2,7 @@ import { Component, OnInit, AfterViewInit, ViewChildren, QueryList } from '@angu
 
 @Component({
   selector: 'app-dynamic-ng-for',
+  standalone: false,
   templateUrl: './dynamic-ng-for.component.html',
   styleUrls: ['./dynamic-ng-for.component.scss']
 })
