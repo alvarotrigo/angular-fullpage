@@ -1,6 +1,6 @@
 {
   "name": "@fullpage/angular-fullpage",
-  "version": "0.1.5",
+  "version": "0.1.7",
   "description": "Official Angular wrapper for fullPage.js",
   "author": "vh13294",
   "contributors": [
@@ -23,7 +23,7 @@
     "ng": "ng",
     "start": "ng serve",
     "post-build": "cpx README.md dist/@fullpage/angular-fullpage",
-    "build": "ng build angular-fullpage && npm run post-build",
+    "build": "node --openssl-legacy-provider ./node_modules/@angular/cli/bin/ng build angular-fullpage && npm run post-build",
     "lint": "ng lint"
   },
   "dependencies": {
@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "cpx": "^1.5.0",
+    "cross-env": "^7.0.3",
     "ng-packagr": "^12.0.0",
     "ts-node": "~8.0.0",
     "typescript": "4.2.3"
