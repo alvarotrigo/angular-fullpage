@@ -45,11 +45,16 @@
     "@angular-devkit/build-angular": "^18.2.19",
     "@angular/cli": "18.0.0",
     "@angular/compiler-cli": "18.0.0",
+    "@angular-eslint/builder": "^18.0.0",
+    "@angular-eslint/eslint-plugin": "^18.0.0",
+    "@angular-eslint/eslint-plugin-template": "^18.0.0",
+    "@angular-eslint/template-parser": "^18.0.0",
     "@types/node": "^20.0.0",
-    "codelyzer": "^0.0.28",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.56.0",
     "ts-node": "~10.9.0",
     "tslib": "^2.4.0",
-    "tslint": "~6.1.0",
     "typescript": "5.4"
   }
 }
