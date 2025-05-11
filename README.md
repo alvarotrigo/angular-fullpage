@@ -14,6 +14,7 @@ Official Angular wrapper for the <a target="_blank" href="https://github.com/alv
 - Brought by [@imac2](https://twitter.com/imac2) thanks to [Vong Panha Huot
 ](https://github.com/vh13294).
 
+<!-- github_only -->
 ## Table of Contents
 
 - [Installation](https://github.com/alvarotrigo/angular-fullpage#installation)
@@ -25,6 +26,8 @@ Official Angular wrapper for the <a target="_blank" href="https://github.com/alv
 - [Examples](https://github.com/alvarotrigo/angular-fullpage#examples)
 - [Contributing](https://github.com/alvarotrigo/angular-fullpage#contributing)
 - [Resources](https://github.com/alvarotrigo/angular-fullpage#resources)
+
+<!-- /github_only -->
 
 ## Installation
 
@@ -44,7 +47,9 @@ If you want to use angular-fullpage to develop non open sourced sites, themes, p
 
 If you are creating an open source application under a license compatible with the [GNU GPL license v3](https://www.gnu.org/licenses/gpl-3.0.html), you may use fullPage under the terms of the GPLv3.
 
+<!-- note -->
 **The credit comments in the JavaScript and CSS files should be kept intact** (even after combination or minification)
+<!-- /note -->
 
 [Read more about fullPage's license](https://alvarotrigo.com/fullPage/pricing/).
 
@@ -111,7 +116,7 @@ export class AppComponent {
 
 ```
 
-You can optionally import types by
+You can optionally import types:
 
 ```typescript
 import { fullpageOptions, fullpageApi } from 'fullpage.js/dist/fullpage.extensions.min';
@@ -138,7 +143,7 @@ Example of HTML:
 ### Use extensions
 In order to make use of [fullpage.js extension](https://alvarotrigo.com/fullPage/extensions/) you'll have to add the extension file to `angular.json`.
 
-For example, if we want to use the `scrollHorizontally` extension we will have to add the path to our `fullpage.scrollHorizontally.min.js` file on the `scripts` array:
+For example, if we want to use the [`scrollHorizontally`](https://alvarotrigo.com/fullPage/extensions/scroll-horizontally.html) extension we will have to add the path to our `fullpage.scrollHorizontally.min.js` file on the `scripts` array:
 
 ```json
 "assets": [
@@ -156,24 +161,6 @@ For example, if we want to use the `scrollHorizontally` extension we will have t
 ```
 
 Then pass the required options to fullPage.js. In this case `scrollHorizontally:true`.
-
-### Use of scrollOverflow
-Same procedure than the [use of extensions](https://github.com/alvarotrigo/angular-fullpage#use-extensions) detailed above.
-
-```json
-"assets": [
-  "src/favicon.ico",
-  "src/assets"
-],
-
-"styles": [
-  "src/styles.css"
-],
-
-"scripts": [
-  "node_modules/fullpage.js/vendors/scrolloverflow.min.js"
-],
-```
 
 ## Dynamic Changes
 If you want to update fullPage.js with new changes in the DOM call the `build()` method after making those changes.
@@ -195,13 +182,50 @@ An example for *ngFor can be seen on the [dynamic-changes-with-ngFor example](ht
 </div>
 ```
 
+## Methods
+
+fullPage.js contains many [methods](https://alvarotrigo.com/fullPage/docs/#methods).
+You can access them through the `fullpageApi` reference that you get from the `(ref)` output event. For example:
+
+```typescript
+// In your component
+fullpageApi: any;
+
+getRef(fullPageRef) {
+  this.fullpageApi = fullPageRef;
+}
+
+// Then you can use any method like:
+moveSectionDown() {
+  this.fullpageApi.moveSectionDown();
+}
+```
+
+## Callbacks
+
+You can define callbacks in the `config` object when initializing fullPage. These callbacks will be triggered at the appropriate times during fullPage's lifecycle. For example:
+
+```typescript
+config = {
+  afterLoad: (origin, destination, direction) => {
+    console.log('Section loaded:', destination.index);
+  },
+  onLeave: (origin, destination, direction) => {
+    console.log('Leaving section:', origin.index);
+  }
+};
+```
+
+All available callbacks can be found in the [fullPage.js documentation](https://alvarotrigo.com/fullPage/docs/#callbacks).
+
 ## Examples
-You can check some examples on the [`demo` folder](https://github.com/alvarotrigo/angular-fullpage/tree/master/demo).
+You can check some full examples on the [`demo` folder](https://github.com/alvarotrigo/angular-fullpage/tree/master/demo) and on the [examples page](https://alvarotrigo.com/fullPage/examples).
 
 ## Contributing
 
 Found an issue? Have an idea? Check out the [Contributing](https://github.com/alvarotrigo/angular-fullpage/blob/master/CONTRIBUTING.md) guide and open a PR
 
+<!-- github_only -->
 ## Resources
 
 - [Wordpress theme](https://alvarotrigo.com/fullPage/utils/wordpress.html)
@@ -211,3 +235,4 @@ Found an issue? Have an idea? Check out the [Contributing](https://github.com/al
 - [fullPage.js jsDelivr CDN](http://www.jsdelivr.com/#!jquery.fullpage)
 - [fullPage.js cdnJS CDN](https://cdnjs.com/libraries/fullPage.js)
 - [fullPage.js documentation](https://github.com/alvarotrigo/fullPage.js)
+<!-- /github_only -->
