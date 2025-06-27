@@ -36,8 +36,8 @@
     "@angular/platform-browser": "13.0.0",
     "@angular/platform-browser-dynamic": "13.0.0",
     "@angular/router": "13.0.0",
-    "@fullpage/angular-fullpage": "0.1.8",
-    "fullpage.js": "4.0.35",
+    "@fullpage/angular-fullpage": "0.1.9",
+    "fullpage.js": "^4.0.37",
     "rxjs": "~6.6.0",
     "zone.js": "~0.11.4"
   },
