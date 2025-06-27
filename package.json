@@ -1,6 +1,6 @@
 {
   "name": "@fullpage/angular-fullpage",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Official Angular wrapper for fullPage.js",
   "author": "vh13294",
   "contributors": [
@@ -33,7 +33,7 @@
     "@angular/cli": "12.0.0",
     "@angular/compiler": "12.0.0",
     "@angular/compiler-cli": "12.0.0",
-    "fullpage.js": "4.0.35"
+    "fullpage.js": "^4.0.37"
   },
   "devDependencies": {
     "cpx": "^1.5.0",
